@@ -1,0 +1,1129 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Lab Assignment Number 1 - cs258</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:"Courier New";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-link:"Body Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:18.0pt;
+	font-family:"Courier New";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{mso-style-link:"Body Text Indent Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{mso-style-link:"Body Text 2 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{mso-style-link:"Body Text Indent 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.5in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{mso-style-link:"Body Text Indent 3 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.75in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma",sans-serif;}
+span.MsoPlaceholderText
+	{color:gray;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri Light",sans-serif;
+	color:#5B9BD5;
+	font-weight:bold;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;
+	font-family:"Courier New";}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;
+	font-family:"Courier New";}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Calibri Light",sans-serif;
+	color:#323E4F;
+	letter-spacing:.25pt;}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	mso-style-link:"Body Text";
+	font-family:"Courier New";}
+span.BodyTextIndentChar
+	{mso-style-name:"Body Text Indent Char";
+	mso-style-link:"Body Text Indent";
+	font-family:"Courier New";}
+span.BodyText2Char
+	{mso-style-name:"Body Text 2 Char";
+	mso-style-link:"Body Text 2";
+	font-family:"Courier New";}
+span.BodyTextIndent2Char
+	{mso-style-name:"Body Text Indent 2 Char";
+	mso-style-link:"Body Text Indent 2";
+	font-family:"Courier New";}
+span.BodyTextIndent3Char
+	{mso-style-name:"Body Text Indent 3 Char";
+	mso-style-link:"Body Text Indent 3";
+	font-family:"Courier New";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma",sans-serif;}
+p.msolistparagraphcxspfirst, li.msolistparagraphcxspfirst, div.msolistparagraphcxspfirst
+	{mso-style-name:msolistparagraphcxspfirst;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.msolistparagraphcxspmiddle, li.msolistparagraphcxspmiddle, div.msolistparagraphcxspmiddle
+	{mso-style-name:msolistparagraphcxspmiddle;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.msolistparagraphcxsplast, li.msolistparagraphcxsplast, div.msolistparagraphcxsplast
+	{mso-style-name:msolistparagraphcxsplast;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:.7in 1.0in .7in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<p class=MsoTitle style='margin-bottom:14.0pt'><b>Lab Assignment Number 1 –
+cs258</b></p>
+
+<p class=MsoNormal><b>Goals</b></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'>1.<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'> </span>Practice handling
+exceptions</p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'>2.<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'> </span>Create an
+abstract data type for processing complex numbers.</p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'>3.<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'> </span>Become
+proficient in using Java's StringTokenizer class and the Java class library.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Synthesis Questions </b></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>
+</span>What is an exception? What three things can happen when an exception
+occurs?</p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>
+</span>Which methods in the Calculator class provided exception handlers?</p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>
+</span>Choose one of the methods in your lab having an exception handler:</p>
+
+<p class=MsoListParagraph style='margin-left:.75in;text-indent:-.25in'>a)<span
+style='font:7.0pt "Times New Roman"'> </span>What is the name of this method?</p>
+
+<p class=MsoListParagraph style='margin-left:.75in;text-indent:-.25in'>b)<span
+style='font:7.0pt "Times New Roman"'> </span>List all possible exceptions this
+handler may encounter, and for each exception, tell whether it originated in
+this method or in a callee and whether it was handled in this method or allowed
+to propagate to this method’s caller.  Your answer to this question is a table with
+the following columns:</p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:53.7pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=187 valign=top style='width:155.8pt;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin-left:0in'>ExceptionClassName</p>
+  </td>
+  <td width=187 valign=top style='width:155.85pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin-left:0in'>OriginatedInMethod</p>
+  </td>
+  <td width=235 valign=top style='width:2.45in;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin-left:0in'>HandledHereOrPropagated</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoListParagraph style='text-indent:-.25in'>4.<span style='font:7.0pt "Times New Roman"'>
+</span>What is a token? </p>
+
+<p class=MsoListParagraph style='margin-left:.75in;text-indent:-.25in'>a)<span
+style='font:7.0pt "Times New Roman"'> </span>What tokens were used to implement
+this lab? </p>
+
+<p class=MsoListParagraph style='margin-left:.75in;text-indent:-.25in'>b)<span
+style='font:7.0pt "Times New Roman"'> </span>Describe the differences between
+the possible constructors in Java's StringTokenizer class.</p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'>5.<span style='font:7.0pt "Times New Roman"'>
+</span>Compute the following complex number operations:</p>
+
+<p class=MsoListParagraph style='margin-left:.75in;text-indent:-.25in'>a)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'> </span>(1-2i) *
+(1+2i)</p>
+
+<p class=MsoListParagraph style='margin-left:.75in;text-indent:-.25in'>b)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'> </span>(3-4i) + (5+6i)</p>
+
+<p class=MsoListParagraph style='margin-left:.75in;text-indent:-.25in'>c)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'> </span>(2+3i) /
+(4-5i)</p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'>6.<span style='font:7.0pt "Times New Roman"'>
+</span>Answer the following review questions from Programming II</p>
+
+<p class=MsoListParagraph style='margin-left:.75in;text-indent:-.25in'>a)<span
+style='font:7.0pt "Times New Roman"'> </span>Show a code snippet that creates
+an array of 100 strings. What is the difference between an array and an
+ArrayList (or Vector)?</p>
+
+<p class=MsoNormal style='margin-left:.5in'>Hint: for b) and c) see
+../demos/AbstractClassDemo.java</p>
+
+<p class=MsoListParagraph style='margin-left:.75in;text-indent:-.25in'>b)<span
+style='font:7.0pt "Times New Roman"'> </span>Show a code snippet that is an
+example of polymorphism using an interface? </p>
+
+<p class=MsoListParagraph style='margin-left:.75in;text-indent:-.25in'>c)<span
+style='font:7.0pt "Times New Roman"'> </span>How does an abstract class differ
+from an interface?</p>
+
+<p class=MsoListParagraph style='margin-left:.75in;text-indent:-.25in'>d)<span
+style='font:7.0pt "Times New Roman"'> </span>If s1 and s2 are variables holding
+references to Strings, and you would like to determine if these strings have
+the same characters, why is it wrong to compare them using the == operator? </p>
+
+<p class=MsoListParagraph style='margin-left:.75in;text-indent:-.25in'>e)<span
+style='font:7.0pt "Times New Roman"'> </span>Show a class named OCount
+containing a class-level variable holding the count of objects created and not
+yet garbage collected.  Hints: static, constructor, destructor</p>
+
+<p class=MsoListParagraph style='margin-left:.75in;text-indent:-.25in'>f)<span
+style='font:7.0pt "Times New Roman"'> </span>Show a code snippet using keyword ‘this’
+where the code would not behave correctly if ‘this’ were omitted.</p>
+
+<p class=MsoListParagraph style='margin-left:.75in;text-indent:-.25in'>g)<span
+style='font:7.0pt "Times New Roman"'> </span>Show a screenshot of your lab
+running in the debugger, stopped in your parseComplex() method, and showing the
+call stack and the value of the formal parameter <i>str</i>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Description of the lab project</b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.0pt;text-indent:-27.0pt'>1.<span style='font-size:7.0pt;
+font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp; </span>An imaginary (or
+complex) number is of the form <i>a + bi</i> where variables, <i>a </i>and <i>b,
+</i>are real numbers; <i>i </i>stands for the square root of <i>-1. </i>An
+example is <i>3.5+4.5i</i>. The real component is <i>3.5</i>; the imaginary
+component is <i>4.5</i>. In this project, we'll need to add and multiply
+complex numbers. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.0pt;text-indent:-27.0pt'>2.<span style='font-size:7.0pt;
+font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp; </span>To add two
+complex numbers we simply add real-to-real and imaginary-to-imaginary. Consider
+the imaginary numbers <i>1.5+2.5i</i> and <i>3.5+4.5i</i>. When we add the real
+portions <i>1.5+3.5</i>, we get <i>5</i>. When we add the imaginary portions <i>2.5+4.5</i>,
+we get <i>7</i>. The answer is therefore <i>5+7i</i>.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.0pt;text-indent:-27.0pt'>3.<span style='font-size:7.0pt;
+font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp; </span>To subtract two
+complex numbers we subtract real-to-real and imaginary-to-imaginary portions.
+For example 3+4i – (1+2i) = 3-1 + 4i-2i = 2 + 2i</p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-indent:-27.0pt'>4.<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp; </span>Multiplication
+is somewhat trickier. We describe the process of multiplying <i>1+2i</i> by <i>3+4i</i>
+in the next three steps:</p>
+
+<p class=MsoNormal style='margin-left:1.5in;text-indent:-.25in'>a.<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'> </span>Compute the
+<b>real part </b>of the product. First multiply real-by-real <i>(1*3=3)</i> and
+imaginary-by-imaginary <i>(2*4=8)</i>. Then subtract the product of the
+imaginary parts <i>(8)</i> from the product of the real parts <i>(3)</i> to get
+the answer <i>(3-8=-5)</i>. The <i>-5 </i>is the real part of the product.</p>
+
+<p class=MsoNormal style='margin-left:1.5in;text-indent:-.25in'>b.<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'> </span>Compute the
+<b>imaginary part </b>of the product. Multiply the first number's real part <i>(1)</i>
+by the second number's imaginary (<i>4) </i>for a result of <i>4</i>. Then
+multiply the second number's real <i>(3) </i>by the first number's imaginary <i>(2)</i>
+for a result of <i>(6)</i>. Add the results of these products together <i>(4+6)</i>
+to get <i>10</i>. The <i>10 </i>is the imaginary part of the product.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.5in;text-indent:-.25in'>c.<span style='font-size:7.0pt;
+font-family:"Times New Roman",serif'> </span>We combine the results of steps <i>a</i>
+and<i> b</i> to get the answer: <i>-5+10i</i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.0pt;text-indent:-27.0pt'>5.<span style='font-size:7.0pt;
+font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp; </span>We can divide by
+converting the problem into a multiplication. First we need to define the term:
+a complex number conjugate. The conjugate of a complex number is formed by
+reversing the sign of the imaginary part. The conjugate of 1+2i is 1-2i. The
+trick to division is to multiply both numerator and denominator by the conjugate
+of the denominator. The complex terms of the denominator will cancel leaving a
+real number in the denominator.&nbsp; Then divide both the real and imaginary
+parts of the conjugated numerator by this real number.<br>
+<br>
+For example, to divide <i>1+2i</i> by <i>3+4i</i>, first multiply the numerator
+and denominator by the conjugate of the denominator (<i>3-4i)</i>. This
+converts the division to a multiplication and the '<i>i</i>' terms in the
+denominator cancel out. <i>(1+2i)/(3+4i) = (1+2i)*(3-4i)/((3+4i)*(3-4i)) =
+(11+2i)/25.&nbsp; </i>Then divide both the real and imaginary portions of 11+2i
+by 25 yielding 11/25 + 2/25i or <i>0.44+0.08i</i>. Use the multiplication
+procedure in the above step to verify this result.&nbsp; </p>
+
+<p class=MsoNormal style='margin-left:58.5pt;text-indent:-27.0pt;text-autospace:
+none'><i>6.</i><i><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;
+</span></i>Create a class named Complex using the <b>exact</b> class API
+(Application Program Interface) that follows. You’ll need to complete all of
+the methods below. <b>DON’T</b> add additional instance variables or change any
+of the method signatures. The constructor with no parameters should set the
+real and imaginary instance variables to zero. The <i>add </i>method has been
+completed to help get you started.&nbsp; <br>
+<b>Note:</b> Adding private methods is fine. Private methods do not change the
+API.<br>
+<br>
+</p>
+
+<p class=MsoNormal style='text-autospace:none'><br>
+<b><span style='font-size:14.0pt;font-family:Consolas;color:#7F0055'>public</span></b><span
+style='font-size:14.0pt;font-family:Consolas;color:black'> </span><b><span
+style='font-size:14.0pt;font-family:Consolas;color:#7F0055'>class</span></b><span
+style='font-size:14.0pt;font-family:Consolas;color:black'> Complex</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>{  </span><b><span style='font-size:14.0pt;
+font-family:Consolas;color:#7F0055'>private</span></b><span style='font-size:
+14.0pt;font-family:Consolas;color:black'> </span><b><span style='font-size:
+14.0pt;font-family:Consolas;color:#7F0055'>double</span></b><span
+style='font-size:14.0pt;font-family:Consolas;color:black'> </span><span
+style='font-size:14.0pt;font-family:Consolas;color:#0000C0'>real</span><span
+style='font-size:14.0pt;font-family:Consolas;color:black'>, </span><span
+style='font-size:14.0pt;font-family:Consolas;color:#0000C0'>imaginary</span><span
+style='font-size:14.0pt;font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>   </span><b><span style='font-size:14.0pt;
+font-family:Consolas;color:#7F0055'>public</span></b><span style='font-size:
+14.0pt;font-family:Consolas;color:black'> Complex(){</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>   }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>   </span><b><span style='font-size:14.0pt;
+font-family:Consolas;color:#7F0055'>public</span></b><span style='font-size:
+14.0pt;font-family:Consolas;color:black'> Complex(</span><b><span
+style='font-size:14.0pt;font-family:Consolas;color:#7F0055'>double</span></b><span
+style='font-size:14.0pt;font-family:Consolas;color:black'> </span><span
+style='font-size:14.0pt;font-family:Consolas;color:#6A3E3E'>real</span><span
+style='font-size:14.0pt;font-family:Consolas;color:black'>, </span><b><span
+style='font-size:14.0pt;font-family:Consolas;color:#7F0055'>double</span></b><span
+style='font-size:14.0pt;font-family:Consolas;color:black'> </span><span
+style='font-size:14.0pt;font-family:Consolas;color:#6A3E3E'>imaginary</span><span
+style='font-size:14.0pt;font-family:Consolas;color:black'>) {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>       </span><span style='font-size:14.0pt;
+font-family:Consolas;color:#3F7F5F'>// if either real or imaginary is
+&quot;NaN&quot;,</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>       </span><span style='font-size:14.0pt;
+font-family:Consolas;color:#3F7F5F'>// the respective value should be set to
+zero</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>       </span><span style='font-size:14.0pt;
+font-family:Consolas;color:#3F7F5F'>// See the Double class for a helpful
+method to</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>        </span><span style='font-size:14.0pt;
+font-family:Consolas;color:#3F7F5F'>// determine whether a double is a
+&quot;NaN&quot;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>   }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>   </span><b><span style='font-size:14.0pt;
+font-family:Consolas;color:#7F0055'>public</span></b><span style='font-size:
+14.0pt;font-family:Consolas;color:black'> String toString(){</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>        </span><b><span style='font-size:
+14.0pt;font-family:Consolas;color:#7F0055'>return</span></b><span
+style='font-size:14.0pt;font-family:Consolas;color:black'> </span><b><span
+style='font-size:14.0pt;font-family:Consolas;color:#7F0055'>null</span></b><span
+style='font-size:14.0pt;font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>   }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>   </span><b><span style='font-size:14.0pt;
+font-family:Consolas;color:#7F0055'>public</span></b><span style='font-size:
+14.0pt;font-family:Consolas;color:black'> Complex add( Complex </span><span
+style='font-size:14.0pt;font-family:Consolas;color:#6A3E3E'>c</span><span
+style='font-size:14.0pt;font-family:Consolas;color:black'>)</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>   {  </span><b><span style='font-size:14.0pt;
+font-family:Consolas;color:#7F0055'>return</span></b><span style='font-size:
+14.0pt;font-family:Consolas;color:black'> </span><b><span style='font-size:
+14.0pt;font-family:Consolas;color:#7F0055'>new</span></b><span
+style='font-size:14.0pt;font-family:Consolas;color:black'> Complex</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>           (</span><span style='font-size:
+14.0pt;font-family:Consolas;color:#0000C0'>real</span><span style='font-size:
+14.0pt;font-family:Consolas;color:black'>+</span><span style='font-size:14.0pt;
+font-family:Consolas;color:#6A3E3E'>c</span><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>.</span><span style='font-size:14.0pt;
+font-family:Consolas;color:#0000C0'>real</span><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>, </span><span style='font-size:14.0pt;
+font-family:Consolas;color:#0000C0'>imaginary</span><span style='font-size:
+14.0pt;font-family:Consolas;color:black'>+</span><span style='font-size:14.0pt;
+font-family:Consolas;color:#6A3E3E'>c</span><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>.</span><span style='font-size:14.0pt;
+font-family:Consolas;color:#0000C0'>imaginary</span><span style='font-size:
+14.0pt;font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>   }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>   </span><b><span style='font-size:14.0pt;
+font-family:Consolas;color:#7F0055'>public</span></b><span style='font-size:
+14.0pt;font-family:Consolas;color:black'> Complex <span style='background:silver'>minus</span>(Complex
+</span><span style='font-size:14.0pt;font-family:Consolas;color:#6A3E3E'>c</span><span
+style='font-size:14.0pt;font-family:Consolas;color:black'>) {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>        </span><b><span style='font-size:
+14.0pt;font-family:Consolas;color:#7F0055'>return</span></b><span
+style='font-size:14.0pt;font-family:Consolas;color:black'> </span><b><span
+style='font-size:14.0pt;font-family:Consolas;color:#7F0055'>null</span></b><span
+style='font-size:14.0pt;font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>   }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>   </span><b><span style='font-size:14.0pt;
+font-family:Consolas;color:#7F0055'>public</span></b><span style='font-size:
+14.0pt;font-family:Consolas;color:black'> Complex product(Complex </span><span
+style='font-size:14.0pt;font-family:Consolas;color:#6A3E3E'>c</span><span
+style='font-size:14.0pt;font-family:Consolas;color:black'>) {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>        </span><b><span style='font-size:
+14.0pt;font-family:Consolas;color:#7F0055'>return</span></b><span
+style='font-size:14.0pt;font-family:Consolas;color:black'> </span><b><span
+style='font-size:14.0pt;font-family:Consolas;color:#7F0055'>null</span></b><span
+style='font-size:14.0pt;font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>   }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>   </span><b><span style='font-size:14.0pt;
+font-family:Consolas;color:#7F0055'>public</span></b><span style='font-size:
+14.0pt;font-family:Consolas;color:black'> Complex div(Complex </span><span
+style='font-size:14.0pt;font-family:Consolas;color:#6A3E3E'>c</span><span
+style='font-size:14.0pt;font-family:Consolas;color:black'>) </span><b><span
+style='font-size:14.0pt;font-family:Consolas;color:#7F0055'>throws</span></b><span
+style='font-size:14.0pt;font-family:Consolas;color:black'>
+IllegalArgumentException {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>        </span><span style='font-size:14.0pt;
+font-family:Consolas;color:#3F7F5F'>// throws IllegalArgumentException if both
+real and </span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>        </span><span style='font-size:14.0pt;
+font-family:Consolas;color:#3F7F5F'>// imaginary parts of c == 0</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>        </span><b><span style='font-size:
+14.0pt;font-family:Consolas;color:#7F0055'>return</span></b><span
+style='font-size:14.0pt;font-family:Consolas;color:black'> </span><b><span
+style='font-size:14.0pt;font-family:Consolas;color:#7F0055'>null</span></b><span
+style='font-size:14.0pt;font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>   }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>   </span><b><span style='font-size:14.0pt;
+font-family:Consolas;color:#7F0055'>public</span></b><span style='font-size:
+14.0pt;font-family:Consolas;color:black'> </span><b><span style='font-size:
+14.0pt;font-family:Consolas;color:#7F0055'>static</span></b><span
+style='font-size:14.0pt;font-family:Consolas;color:black'> Complex
+parseComplex(String </span><span style='font-size:14.0pt;font-family:Consolas;
+color:#6A3E3E'>str</span><span style='font-size:14.0pt;font-family:Consolas;
+color:black'>) </span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>                    </span><b><span
+style='font-size:14.0pt;font-family:Consolas;color:#7F0055'>throws</span></b><span
+style='font-size:14.0pt;font-family:Consolas;color:black'>
+NumberFormatException {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>        </span><b><span style='font-size:
+14.0pt;font-family:Consolas;color:#7F0055'>return</span></b><span
+style='font-size:14.0pt;font-family:Consolas;color:black'> </span><b><span
+style='font-size:14.0pt;font-family:Consolas;color:#7F0055'>null</span></b><span
+style='font-size:14.0pt;font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>   }                    </span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas;color:black'>}</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:14.0pt;
+font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-indent:-27.0pt'>7.<span style='font-size:7.0pt;
+font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp; </span>Your <i>parseComplex()
+</i>method should recognize all of the following possible formats for input: <i>3+4i,
+-3+4i, +3+4i, 3-4i, +3-4i, -3-4i</i>. Any other format is illegal. Your
+implementation should detect all errors and throw appropriate exceptions; Your <i>parseComplex()
+</i>method should <b>NOT</b> include any System.out.println() statements. If
+the input string does not represent a legally formatted Complex number, it should
+throw a NumberFormatException. You will need to use the <i>StringTokenizer</i>
+class to complete <i>parseComplex()</i>.</p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-indent:-27.0pt'>8.<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp; </span><b>Extra
+Credit </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.5in;text-indent:-.25in'>a.<span style='font-size:7.0pt;
+font-family:"Times New Roman",serif'> </span>Recognize the following additional
+formats for inputting complex numbers: <br>
+<i>3, +3, -3, i, +i, -i, 3i, +3i, -3i, 3+i, 3-i, +3+i, +3-i, -3+i, -3-i</i>.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.0pt;text-indent:-27.0pt'>9.<span style='font-size:7.0pt;
+font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp; </span>Your <i>toString()</i>
+method should use the most appropriate format to format strings for printing.
+You should <b>NOT</b> print, e.g., <i>3.0+-4.0i or 3+0.0i or 0.0+3i or 1.0i or
+-1.0i or 0.0+0.0i</i>. <i>3.0+-4.0i</i> should display as <i>3.0-4.0i;</i> <i>3.0+0.0i</i>
+should display as <i>3.0;</i> <i>0.0+3.0i</i> should display as <i>3.0i;</i> <i>1.0i</i>
+should display as <i>i; -1.0i should display as –i; 0.0+0.0i should display as
+0.0</i>.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.0pt;text-indent:-27.0pt'>10.<span style='font-size:7.0pt;
+font-family:"Times New Roman",serif'>&nbsp; </span>The listing at the bottom of
+this lab is a driver program to verify your Complex class methods. Run enough
+tests to make sure that all of your methods work correctly. &nbsp;<b><span
+style='color:red'>Note:<span class=apple-converted-space>&nbsp;</span></span></b><span
+style='color:red'><span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>The driver program below does not handle the
+problem that happens when the program attempts to divide by zero. Fix the
+driver program to handle this exception (output a suitable error message and
+continue taking input)</span></span><span style='color:black'>.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.0pt;text-indent:-27.0pt'><span style='color:black'>Here is a
+minimal set of inputs to the Calculator program:</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>3+4i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>-3+4i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>-</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>y</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>+3+4i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>3-4i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>y</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>+3-4i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>-3-4i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>*</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>y</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>2+3i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>4-5i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>/</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>y</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>0+0i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>0+0i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>/</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>y</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>a+3i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>-a-3i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>4+3</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>4+3i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>4-3i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>n</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>Calculator should produce the correct
+output for each operation shown, and display error messages for the incorrectly
+formatted complex numbers.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>Here extra credit tests:</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>3</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>+3</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>y</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>-3</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>y</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>+i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>-i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>y</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>3i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>+3i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>y</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>-3i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>3+i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>y</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>3-i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>+3+i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>y</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>+3-i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>-3+i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>y</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>-3-i</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>0</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>n</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.35pt;text-indent:-27.35pt'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.0pt;text-indent:-27.0pt'>11.<span style='font-size:7.0pt;
+font-family:"Times New Roman",serif'>&nbsp; </span>Answer the synthesis
+questions in an rtf or doc file (answers.rtf or answers.doc). <b>Type your name
+and the lab number at the top of this file and include the questions with the
+answers.</b> Place this file in the root directory of your eclipse project.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:63.0pt;text-indent:-27.0pt'>12.<span style='font-size:7.0pt;
+font-family:"Times New Roman",serif'>&nbsp; </span>Zip the directory containing
+your Eclipse project and the synthesis answers document and submit this zipfile
+on moodle. </p>
+
+<p class=MsoNormal><b>Suggestions</b></p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal style='margin-bottom:12.0pt'>To parse the complex numbers
+     that are input, use the <i>StringTokenizer</i> class. Our textbook
+     provides examples in Chapter 4. <i>Keyboard.java</i> (downloadable from
+     the class web site) uses this class, so you can look at its code as
+     another example. You can also google for a description of all of the <i>StringTokenizer</i>
+     methods that are available. The methods that you will find useful for this
+     project are <i>hasMoreTokens()</i>, <i>nextToken()</i>, and the
+     constructors.</li>
+ <li class=MsoNormal style='margin-bottom:12.0pt'>Be careful when using the
+     Double or Character wrapper classes. It's easy to get the syntax wrong.
+     Using <i>Double.valueOf(String s)</i> method is probably the easiest way
+     to go. Check out the text for details on the <i>Double</i><b> </b>class.</li>
+ <li class=MsoNormal style='margin-bottom:12.0pt'>If you find your Complex
+     class growing over 200 or so lines of code, you might be making the
+     assignment too difficult. Ask questions or send email if you’re confused. </li>
+ <li class=MsoNormal>The following java statement throws the kind of exception
+     your <i>parseComplex() </i>method needs to throw. Remember that <i>throw </i>statements
+     require an instantiated <i>Exception</i> object as follows.</li>
+</ol>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-indent:-.25in'><i>throw new</i> NumberFormatException();<br>
+&nbsp;</p>
+
+<p class=MsoNormal align=center style='text-align:center'><b>Driver Program for
+lab 1</b></p>
+
+<p class=MsoNormal align=center style='text-align:center'>Your job: Test your
+Complex class using this program</p>
+
+<p class=MsoNormal align=center style='text-align:center'><b>&nbsp;</b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>// Program to add and
+multiply complex numbers.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>// Lab #1 for cs258; uses a class
+that handles complex numbers (Complex.java).</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>import java.io.*;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>public class Calculator</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>{&nbsp; public static void
+main(String[] args)</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp; {&nbsp;
+BufferedReader in = new BufferedReader(new InputStreamReader(System.in));</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang=PT-BR style='font-size:10.0pt'>Complex num1, num2, result = new
+Complex();</span></p>
+
+<p class=MsoNormal><span lang=PT-BR style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-size:10.0pt'>char&nbsp;&nbsp;&nbsp; op;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+boolean more;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+System.out.println(&quot;\nComplex number calculation program\n&quot;);</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang=PT-BR style='font-size:10.0pt'>do</span></p>
+
+<p class=MsoNormal><span lang=PT-BR style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{&nbsp; num1 = readComplex(in);</span></p>
+
+<p class=MsoNormal><span lang=PT-BR style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+num2 = readComplex(in);</span></p>
+
+<p class=MsoNormal><span lang=PT-BR style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=PT-BR style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-size:10.0pt'>op&nbsp;&nbsp; = readChar(in, &quot;Enter
+the operation '+, -, *, or /': &quot;, &quot;+-*/&quot;);</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp; switch (op)</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp; {&nbsp; case '+':&nbsp; result = num1.add(num2);</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+break;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case '*':&nbsp; result = num1.product(num2);</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+break;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang=PT-BR style='font-size:10.0pt'>case
+'/':&nbsp; result = num1.div(num2);</span></p>
+
+<p class=MsoNormal><span lang=PT-BR style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-size:10.0pt'>break;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case '-':&nbsp; result =
+num1.minus(num2);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp; </span><span lang=PT-BR style='font-size:10.0pt'>}</span></p>
+
+<p class=MsoNormal><span lang=PT-BR style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp; System.out.println(num1+&quot; &quot;+op+&quot; &quot;+num2+&quot;
+= &quot;+result);</span></p>
+
+<p class=MsoNormal><span lang=PT-BR style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-size:10.0pt'>more = (readChar(in, &quot;Perform
+another calculation? (y/n): &quot;, &quot;yn&quot;) !='n');</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+} while (more);</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+System.out.println(&quot;\n\nCalculation program completed\n&quot;);</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp; }</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp; // Method to
+read a complex number</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp; public static
+Complex readComplex(BufferedReader in) </span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp; {&nbsp;&nbsp; </span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'><span style='font-size:10.0pt;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp; String line;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; while (true)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {&nbsp;&nbsp;&nbsp;&nbsp;
+System.out.print(&quot;Enter a complex number: &quot;);&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-size:10.0pt;color:#941EDF'>try</span><span style='font-size:10.0pt;
+color:black'> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {&nbsp; line
+= in.readLine();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-size:10.0pt;color:#941EDF'>return</span><span
+style='font-size:10.0pt;color:black'> Complex.parseComplex (line);&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-size:10.0pt;color:#941EDF'>catch</span><span style='font-size:10.0pt;
+color:black'> (Exception exception) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {&nbsp;
+System.out.println(&quot;illegal Format - enter 'a+bi' and try
+again&quot;);&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp; }</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp; // Method to
+read the first character of a string</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp; public static
+char readChar(BufferedReader in, String prompt, String chars)</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;&nbsp; {</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+String line;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+char&nbsp;&nbsp; value;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; while (true)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {&nbsp; try</span><span style='font-size:10.0pt;
+color:#941EDF'><br>
+</span><span style='font-size:10.0pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{&nbsp; System.out.print(prompt);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; line =
+in.readLine();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; value =
+line.toLowerCase().charAt(0);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if
+(chars.indexOf(value)&lt;0) throw new NumberFormatException();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return
+value;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; catch (Exception exception) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {
+System.out.println(&quot;Illegal - try again&quot;); }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+</span><span style='font-size:10.0pt'>&nbsp;&nbsp; }</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>}</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal>&nbsp;<span style='font-size:10.0pt'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

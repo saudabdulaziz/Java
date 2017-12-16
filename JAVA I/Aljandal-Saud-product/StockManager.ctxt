@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=StockManager
+comment0.text=\n\ Manage\ the\ stock\ in\ a\ business.\n\ The\ stock\ is\ described\ by\ zero\ or\ more\ Products.\n\ \n\ @author\ (Saud\ Aljandl)\ \n\ @version\ (May/29/2017)\n\ modifications\:\n\ method\ printProductDetails()\ has\ been\ fixed\ with\ the\ requirements\ of\ EX.\ 4.56\n\ method\ findProduct(int\ id)\ has\ been\ fixed\ with\ the\ requirements\ of\ EX.\ 4.57\n\ method\ numberInStock(int\ id)\ has\ been\ fixed\ with\ the\ requirements\ of\ EX.\ 4.58\n\ method\ delivery(int\ id,\ int\ amount)\ has\ been\ fixed\ with\ the\ requirements\ of\ EX.\ 4.59\n
+comment1.params=
+comment1.target=StockManager()
+comment1.text=\n\ Initialise\ the\ stock\ manager.\n
+comment2.params=item
+comment2.target=void\ addProduct(Product)
+comment2.text=\n\ Add\ a\ product\ to\ the\ list.\n\ @param\ item\ The\ item\ to\ be\ added.\n
+comment3.params=id\ amount
+comment3.target=void\ delivery(int,\ int)
+comment3.text=\n\ EX.\ 4.59\n\ modifications\:\ if\ statements\ has\ been\ added\ to\ satisfy\ the\ requirment.\n\ Receive\ a\ delivery\ of\ a\ particular\ product.\n\ Increase\ the\ quantity\ of\ the\ product\ by\ the\ given\ amount.\n\ @param\ id\ The\ ID\ of\ the\ product.\n\ @param\ amount\ The\ amount\ to\ increase\ the\ quantity\ by.\n
+comment4.params=id
+comment4.target=Product\ findProduct(int)
+comment4.text=\n\ EX.\ 4.57\n\ modifications\:\ for\ each\ loop\ has\ been\ added\ to\ satisfy\ the\ requirment.\n\ Try\ to\ find\ a\ product\ in\ the\ stock\ with\ the\ given\ id.\n\ @return\ The\ identified\ product,\ or\ null\ if\ there\ is\ none\n\ \ \ \ \ \ \ \ \ with\ a\ matching\ ID.\n
+comment5.params=id
+comment5.target=int\ numberInStock(int)
+comment5.text=\n\ EX.\ 5.58\n\ modifications\:\ if\ statement\ has\ been\ added\ to\ satisfy\ the\ requirment\ below.\n\ Locate\ a\ product\ with\ the\ given\ ID,\ and\ return\ how\n\ many\ of\ this\ item\ are\ in\ stock.\ If\ the\ ID\ does\ not\n\ match\ any\ product,\ return\ zero.\n\ @param\ id\ The\ ID\ of\ the\ product.\n\ @return\ The\ quantity\ of\ the\ given\ product\ in\ stock.\n
+comment6.params=
+comment6.target=void\ printProductDetails()
+comment6.text=\n\ EX.56\n\ modifications\:\ for\ each\ loop\ has\ been\ added\ to\ satisfy\ the\ requirment\ below.\n\ Print\ details\ of\ all\ the\ products.\n
+numComments=7

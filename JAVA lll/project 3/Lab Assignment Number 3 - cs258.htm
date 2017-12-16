@@ -1,0 +1,674 @@
+
+<!-- saved from url=(0048)http://cs.sou.edu/~nordquip/cs258/labs/lab3.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<title>Lab Assignment Number 3 - cs258</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:1.0in;
+	text-align:center;
+	text-indent:-.25in;
+	font-size:14.0pt;
+	font-family:"Courier New";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-link:"Body Text Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	font-size:18.0pt;
+	font-family:"Courier New";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{mso-style-link:"Body Text Indent Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{mso-style-link:"Body Text 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{mso-style-link:"Body Text Indent 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:1.5in;
+	text-indent:-.25in;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{mso-style-link:"Body Text Indent 3 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:.75in;
+	text-align:center;
+	text-indent:-.25in;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.0in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:.5in;
+	text-indent:-.25in;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri Light",sans-serif;
+	color:#5B9BD5;
+	font-weight:bold;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	margin-right:0in;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;
+	font-family:"Courier New";}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;
+	font-family:"Courier New";}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Calibri Light",sans-serif;
+	color:#323E4F;
+	letter-spacing:.25pt;}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	mso-style-link:"Body Text";
+	font-family:"Courier New";}
+span.BodyTextIndentChar
+	{mso-style-name:"Body Text Indent Char";
+	mso-style-link:"Body Text Indent";
+	font-family:"Courier New";}
+span.BodyText2Char
+	{mso-style-name:"Body Text 2 Char";
+	mso-style-link:"Body Text 2";
+	font-family:"Courier New";}
+span.BodyTextIndent2Char
+	{mso-style-name:"Body Text Indent 2 Char";
+	mso-style-link:"Body Text Indent 2";
+	font-family:"Courier New";}
+span.BodyTextIndent3Char
+	{mso-style-name:"Body Text Indent 3 Char";
+	mso-style-link:"Body Text Indent 3";
+	font-family:"Courier New";}
+p.msolistparagraphcxspfirst, li.msolistparagraphcxspfirst, div.msolistparagraphcxspfirst
+	{mso-style-name:msolistparagraphcxspfirst;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:.5in;
+	text-indent:-.25in;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.msolistparagraphcxspmiddle, li.msolistparagraphcxspmiddle, div.msolistparagraphcxspmiddle
+	{mso-style-name:msolistparagraphcxspmiddle;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:.5in;
+	text-indent:-.25in;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.msolistparagraphcxsplast, li.msolistparagraphcxsplast, div.msolistparagraphcxsplast
+	{mso-style-name:msolistparagraphcxsplast;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:.5in;
+	text-indent:-.25in;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0in;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+p.msopapdefault, li.msopapdefault, div.msopapdefault
+	{mso-style-name:msopapdefault;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+.MsoPapDefault
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:.7in 1.0in .7in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang="EN-US" link="blue" vlink="purple">
+
+<div class="WordSection1">
+
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:0in"><b>Lab
+Assignment Number 3 – cs258</b></p>
+
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:0in"><br>
+<b>Goals:</b><br>
+1)<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span>Be
+able to work with individual bits in java<i>.</i><br>
+2)<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span>Serialize
+objects.<br>
+3)<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span>Understand
+the use of a driver program for ‘white box’ testing.<br>
+4)<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span>Develop
+a program that can create and grade true/false tests.<br>
+<br>
+<b>Synthesis Questions:</b><br>
+1.<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span><span style="color:black">If x = 37, y=23, z=-110, r=-32 answer the following
+questions. Assume the variables shown above were declared to be bytes. </span>Show
+each result in:</p>
+
+<p class="MsoNoSpacing" style="margin-left:.75in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>binary, e.g., 11110000</p>
+
+<p class="MsoNoSpacing" style="margin-left:.75in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>hex, e.g., F0</p>
+
+<p class="MsoNoSpacing" style="margin-left:.75in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>signed decimal, e.g., -16&nbsp; </p>
+
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:0in">You can verify
+your results by setting the debugger to display hex. &nbsp;</p>
+
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:0in">There will be
+questions like this on the quiz, so calculate them by hand yourself before
+verifying them with the debugger (Window | Preferences | Java | Debug |
+Primitive Display Options | Display Hex values checkbox).</p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:0in"><br>
+a.<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span>System.out.println(x&amp;y);<br>
+b.<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span>System.out.println(x^y);<br>
+c.<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span>System.out.println(~x|y);<br>
+d.<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span>System.out.println(~x&gt;&gt;2);<br>
+e.<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span>System.out.println((byte)(z&lt;&lt;(~r&gt;&gt;4)));<br>
+f.<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span>System.out.println<br>
+((byte)(x + (x&lt;&lt;1) + (x&lt;&lt;2) + (x&lt;&lt;3)));<br>
+g.<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span>System.out.println(y&gt;&gt;&gt;3);<br>
+h.<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span>System.out.println(x&amp;y|z^r);<br>
+i.<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span>System.out.println(~x
++ x);<br>
+j.<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span>System.out.println(x|(3&lt;&lt;4));</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt"><br>
+<span style="color:red">2.</span><span style="font-size:14.0pt;font-family:
+&quot;Times New Roman&quot;,serif;color:red"> </span><span style="color:red">Assume byte
+b contains 10110001</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><span style="color:red">a. System.out.println(b) would print what value?</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><span style="color:red">b. Show the mask and operator you would use to set bit 3 in
+byte b and leave the rest of the bits the same (b ? 0b????????).&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><span style="color:red">c. Show the mask and operator you would use to clear bit 5 in
+byte b and leave the rest of the bits the same (b ? 0b????????).&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><span style="color:red">d. Show the mask and operator you would use to toggle
+(reverse the value of) bit 2 in byte b and leave the rest of the bits the same
+(b ? 0b????????).&nbsp;&nbsp; </span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:0in"><b>&nbsp;</b></p>
+
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:0in"><b>Requirements:</b><br>
+0) Please put all classes in the default package.</p>
+
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:0in"><span style="color:red"><br>
+</span>1)<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span>The
+first step is to develop a general-purpose class that will be able to perform
+operations on strings of bits. <br>
+Here is the <a href="http://cs.sou.edu/~nordquip/cs258/labs/l3doc/BitMap.html">java doc for Bitmap.java</a>.</p>
+
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:0in"><br>
+<b>Notes:</b></p>
+
+<p class="MsoNoSpacing" style="margin-left:.75in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>The only instance variable you need is a single long to hold the bits,
+e.g.,</p>
+
+<p class="MsoNoSpacing" style="margin-left:.75in">&nbsp;<span style="color:red">long
+bits;&nbsp;&nbsp; // this variable must be a long</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.75in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Bits in a BitMap object are numbered from 0 (least significant) to 63
+(most significant)</p>
+
+<p class="MsoNoSpacing" style="margin-left:.75in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Your second and third constructors will be called with, e.g.,
+"ttffft" or the boolean array {true, true, false, false, false, true}</p>
+
+<p class="MsoNoSpacing" style="margin-left:.75in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Consider making a private method in the BitMap class that returns a long
+that could be used as a mask by any method performing an operation on a single
+bit.</p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:0in"><br>
+While there are many methods specified, the completed class requires only about
+a page of code.</p>
+
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:0in"><br>
+2)<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span>The
+next step is to test the BitMap class you created. You can use <a href="http://cs.sou.edu/~nordquip/cs258/labs/Driver.java">Driver.java</a> for this purpose.&nbsp; <b>Don’t modify this
+program in any way.&nbsp; </b>It contains a menu that has options to test every
+BitMap method. Once the testing is complete, <b><i>BitMap, </i></b>could be
+used as a general tool for working with bits and could be used in many
+programs.</p>
+
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:0in"><br>
+<span style="color:red">After you have tested your BitMap class, run the set of
+test cases shown at the bottom of this lab and ensure you get the same answers.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:0in"><span style="color:red"><br>
+</span>3)<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;
+</span>Use notepad or a similar text editor to create a file of true/false
+questions.&nbsp; Make sure to have at least 10 questions in your test.</p>
+
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:0in"><br>
+4)<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span>Now
+write a program (<i>CreateTest.java)</i> that constructs the answer key for a <i>true/false</i>
+test. This program must:</p>
+
+<p class="MsoNoSpacing" style="margin-left:.75in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Ask the user for the name of the question file,</p>
+
+<p class="MsoNoSpacing" style="margin-left:.75in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Read this file, ask the user each question, and record the resulting
+answers in a bit map object. (Instantiate a BufferedReader and read lines from
+the text file until you encounter a null line.)</p>
+
+<p class="MsoNoSpacing" style="margin-left:.75in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Use an ObjectOutputStream to write the BitMap object to a sequential
+binary file. </p>
+
+<p class="MsoNoSpacing" style="margin-left:.75in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="color:red">The name of this file must be the same as the
+base name of the question file&nbsp;+&nbsp;and have the extension “.key”.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:0in"><br>
+Run this program to create a key file for your test questions.</p>
+
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:0in"><br>
+<br>
+5)<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span>Finally,
+create a new application (<i>TakeTest.java</i>). You can copy <i>CreateTest.java</i>
+to <i>TakeTest.java</i> then modify it appropriately. This program must:</p>
+
+<p class="MsoNoSpacing" style="margin-left:.75in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="color:red">ask the user for the name of the question file</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.75in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>administer the test to the user and save the user’s answers into a
+BitMap object </p>
+
+<p class="MsoNoSpacing" style="margin-left:.75in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>read the key file for the question file the user specified (using an
+ObjectInputStream) </p>
+
+<p class="MsoNoSpacing" style="margin-left:.75in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>compare the answers the user gave to the answers in the key. <br>
+display the score earned by the test taker.</p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:0in"><br>
+In both CreateTest and TakeTest, be sure to handle exceptions
+appropriately.&nbsp; Programs should not crash.</p>
+
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:0in"><br>
+6)<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span>Answer
+the synthesis questions in an rtf or doc file (answers.rtf or answers.doc). <b>Type
+your name and the lab number on this file and include the questions with the
+answers.</b></p>
+
+<p class="MsoNoSpacing" style="margin-left:.25in;text-indent:0in">&nbsp;<br>
+7)<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span>Zip
+your Eclipse project along with the synthesis answers and submit on moodle.</p>
+
+<p class="MsoNoSpacing" style="margin-top:0in;margin-right:0in;margin-bottom:
+12.0pt;margin-left:.25in;text-indent:0in"><br>
+<b><span style="font-size:16.0pt">Sample Run of the Driver – Test until you can
+duplicate this run</span></b><span style="font-size:16.0pt"><br>
+</span>&nbsp;<span style="font-size:14.0pt;font-family:Consolas;color:black">Menu
+of driver options</span><span style="font-size:14.0pt;font-family:Consolas"><br>
+<span style="color:black">&nbsp;0 = toString</span><br>
+<span style="color:black">&nbsp;1 = setBit</span><br>
+<span style="color:black">&nbsp;2 = clearBit</span><br>
+<span style="color:black">&nbsp;3 = checkBit</span><br>
+<span style="color:black">&nbsp;4 = clearAll</span><br>
+<span style="color:black">&nbsp;5 = setAll</span><br>
+<span style="color:black">&nbsp;6 = score</span><br>
+<span style="color:black">&nbsp;7 = exit</span><br>
+<span style="color:black">Enter option: </span><span style="color:#00B050">0</span><br>
+<span style="color:black">ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</span><br>
+<span style="color:black">Menu of driver options</span><br>
+<span style="color:black">&nbsp;0 = toString</span><br>
+<span style="color:black">&nbsp;1 = setBit</span><br>
+<span style="color:black">&nbsp;2 = clearBit</span><br>
+<span style="color:black">&nbsp;3 = checkBit</span><br>
+<span style="color:black">&nbsp;4 = clearAll</span><br>
+<span style="color:black">&nbsp;5 = setAll</span><br>
+<span style="color:black">&nbsp;6 = score</span><br>
+<span style="color:black">&nbsp;7 = exit</span><br>
+<span style="color:black">Enter option: </span><span style="color:#00B050">1</span><br>
+<span style="color:black">Enter bit number: </span><span style="color:#00C87D">0</span><br>
+<span style="color:black">fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffT</span><br>
+<span style="color:black">Menu of driver options</span><br>
+<span style="color:black">&nbsp;0 = toString</span><br>
+<span style="color:black">&nbsp;1 = setBit</span><br>
+<span style="color:black">&nbsp;2 = clearBit</span><br>
+<span style="color:black">&nbsp;3 = checkBit</span><br>
+<span style="color:black">&nbsp;4 = clearAll</span><br>
+<span style="color:black">&nbsp;5 = setAll</span><br>
+<span style="color:black">&nbsp;6 = score</span><br>
+<span style="color:black">&nbsp;7 = exit</span><br>
+<span style="color:black">Enter option: </span><span style="color:#00B050">1</span><br>
+<span style="color:black">Enter bit number: </span><span style="color:#00C87D">63</span><br>
+<span style="color:black">TffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffT</span><br>
+<span style="color:black">Menu of driver options</span><br>
+<span style="color:black">&nbsp;0 = toString</span><br>
+<span style="color:black">&nbsp;1 = setBit</span><br>
+<span style="color:black">&nbsp;2 = clearBit</span><br>
+<span style="color:black">&nbsp;3 = checkBit</span><br>
+<span style="color:black">&nbsp;4 = clearAll</span><br>
+<span style="color:black">&nbsp;5 = setAll</span><br>
+<span style="color:black">&nbsp;6 = score</span><br>
+<span style="color:black">&nbsp;7 = exit</span><br>
+<span style="color:black">Enter option: </span><span style="color:#00B050">2</span><br>
+<span style="color:black">Enter bit number: </span><span style="color:#00C87D">0</span><br>
+<span style="color:black">Tfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</span><br>
+<span style="color:black">Menu of driver options</span><br>
+<span style="color:black">&nbsp;0 = toString</span><br>
+<span style="color:black">&nbsp;1 = setBit</span><br>
+<span style="color:black">&nbsp;2 = clearBit</span><br>
+<span style="color:black">&nbsp;3 = checkBit</span><br>
+<span style="color:black">&nbsp;4 = clearAll</span><br>
+<span style="color:black">&nbsp;5 = setAll</span><br>
+<span style="color:black">&nbsp;6 = score</span><br>
+<span style="color:black">&nbsp;7 = exit</span><br>
+<span style="color:black">Enter option: </span><span style="color:#00B050">3</span><br>
+<span style="color:black">Enter bit number: </span><span style="color:#00C87D">63</span><br>
+<span style="color:black">Bit 63 is set</span><br>
+<span style="color:black">Tfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</span><br>
+<span style="color:black">Menu of driver options</span><br>
+<span style="color:black">&nbsp;0 = toString</span><br>
+<span style="color:black">&nbsp;1 = setBit</span><br>
+<span style="color:black">&nbsp;2 = clearBit</span><br>
+<span style="color:black">&nbsp;3 = checkBit</span><br>
+<span style="color:black">&nbsp;4 = clearAll</span><br>
+<span style="color:black">&nbsp;5 = setAll</span><br>
+<span style="color:black">&nbsp;6 = score</span><br>
+<span style="color:black">&nbsp;7 = exit</span><br>
+<span style="color:black">Enter option: </span><span style="color:#00B050">3</span><br>
+<span style="color:black">Enter bit number: </span><span style="color:#00C87D">0</span><br>
+<span style="color:black">Bit 0 is not set</span><br>
+<span style="color:black">Tfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</span><br>
+<span style="color:black">Menu of driver options</span><br>
+<span style="color:black">&nbsp;0 = toString</span><br>
+<span style="color:black">&nbsp;1 = setBit</span><br>
+<span style="color:black">&nbsp;2 = clearBit</span><br>
+<span style="color:black">&nbsp;3 = checkBit</span><br>
+<span style="color:black">&nbsp;4 = clearAll</span><br>
+<span style="color:black">&nbsp;5 = setAll</span><br>
+<span style="color:black">&nbsp;6 = score</span><br>
+<span style="color:black">&nbsp;7 = exit</span><br>
+<span style="color:black">Enter option: </span><span style="color:#00B050">1</span><br>
+<span style="color:black">Enter bit number: </span><span style="color:#00C87D">0</span><br>
+<span style="color:black">TffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffT</span><br>
+<span style="color:black">Menu of driver options</span><br>
+<span style="color:black">&nbsp;0 = toString</span><br>
+<span style="color:black">&nbsp;1 = setBit</span><br>
+<span style="color:black">&nbsp;2 = clearBit</span><br>
+<span style="color:black">&nbsp;3 = checkBit</span><br>
+<span style="color:black">&nbsp;4 = clearAll</span><br>
+<span style="color:black">&nbsp;5 = setAll</span><br>
+<span style="color:black">&nbsp;6 = score</span><br>
+<span style="color:black">&nbsp;7 = exit</span><br>
+<span style="color:black">Enter option: </span><span style="color:#00B050">1</span><br>
+<span style="color:black">Enter bit number: </span><span style="color:#00C87D">4</span><br>
+<span style="color:black">TffffffffffffffffffffffffffffffffffffffffffffffffffffffffffTfffT</span><br>
+<span style="color:black">Menu of driver options</span><br>
+<span style="color:black">&nbsp;0 = toString</span><br>
+<span style="color:black">&nbsp;1 = setBit</span><br>
+<span style="color:black">&nbsp;2 = clearBit</span><br>
+<span style="color:black">&nbsp;3 = checkBit</span><br>
+<span style="color:black">&nbsp;4 = clearAll</span><br>
+<span style="color:black">&nbsp;5 = setAll</span><br>
+<span style="color:black">&nbsp;6 = score</span><br>
+<span style="color:black">&nbsp;7 = exit</span><br>
+<span style="color:black">Enter option: </span><span style="color:#00B050">4</span><br>
+<span style="color:black">ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</span><br>
+<span style="color:black">Menu of driver options</span><br>
+<span style="color:black">&nbsp;0 = toString</span><br>
+<span style="color:black">&nbsp;1 = setBit</span><br>
+<span style="color:black">&nbsp;2 = clearBit</span><br>
+<span style="color:black">&nbsp;3 = checkBit</span><br>
+<span style="color:black">&nbsp;4 = clearAll</span><br>
+<span style="color:black">&nbsp;5 = setAll</span><br>
+<span style="color:black">&nbsp;6 = score</span><br>
+<span style="color:black">&nbsp;7 = exit</span><br>
+<span style="color:black">Enter option: </span><span style="color:#00B050">5</span><br>
+<span style="color:black">TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT</span><br>
+<span style="color:black">Menu of driver options</span><br>
+<span style="color:black">&nbsp;0 = toString</span><br>
+<span style="color:black">&nbsp;1 = setBit</span><br>
+<span style="color:black">&nbsp;2 = clearBit</span><br>
+<span style="color:black">&nbsp;3 = checkBit</span><br>
+<span style="color:black">&nbsp;4 = clearAll</span><br>
+<span style="color:black">&nbsp;5 = setAll</span><br>
+<span style="color:black">&nbsp;6 = score</span><br>
+<span style="color:black">&nbsp;7 = exit</span><br>
+<span style="color:black">Enter option: </span><span style="color:#00B050">6<br>
+</span><br>
+<span style="color:black">Enter the user's answers:</span><br>
+<span style="color:black">Enter string of 't','T','f', or 'F' MSB to LSB &gt; </span><br>
+<span style="color:#00C87D">tftftf</span><br>
+<span style="color:black">Enter 'b' or 'B' for Boolean map, anything else for
+string map &gt;</span><br>
+<span style="color:black">Enter the number of valid bits in key: </span><br>
+<span style="color:#00C87D">6</span><br>
+<span style="color:black">50.0<br>
+Menu of driver options</span><br>
+<span style="color:black">&nbsp;0 = toString</span><br>
+<span style="color:black">&nbsp;1 = setBit</span><br>
+<span style="color:black">&nbsp;2 = clearBit</span><br>
+<span style="color:black">&nbsp;3 = checkBit</span><br>
+<span style="color:black">&nbsp;4 = clearAll</span><br>
+<span style="color:black">&nbsp;5 = setAll</span><br>
+<span style="color:black">&nbsp;6 = score</span><br>
+<span style="color:black">&nbsp;7 = exit</span><br>
+<span style="color:black">Enter option: </span><span style="color:#00B050">4</span><br>
+<span style="color:black">ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</span><br>
+<span style="color:black">Menu of driver options</span><br>
+<span style="color:black">&nbsp;0 = toString</span><br>
+<span style="color:black">&nbsp;1 = setBit</span><br>
+<span style="color:black">&nbsp;2 = clearBit</span><br>
+<span style="color:black">&nbsp;3 = checkBit</span><br>
+<span style="color:black">&nbsp;4 = clearAll</span><br>
+<span style="color:black">&nbsp;5 = setAll</span><br>
+<span style="color:black">&nbsp;6 = score</span><br>
+<span style="color:black">&nbsp;7 = exit</span><br>
+<span style="color:black">Enter option: </span><span style="color:#00B050">6</span><br>
+<span style="color:black">Enter the user's answers:</span><br>
+<span style="color:black">Enter string of 't','T','f', or 'F' MSB to LSB &gt; </span><br>
+<span style="color:#00C87D">tftft</span><br>
+<span style="color:black">Enter 'b' or 'B' for Boolean map, anything else for
+string map &gt; </span><br>
+<span style="color:#00C87D">b</span><br>
+<span style="color:black">Enter the number of valid bits in key: </span><br>
+<span style="color:#00C87D">4</span><br>
+<span style="color:black">50.0</span><br>
+<span style="color:black">Menu of driver options</span><br>
+<span style="color:black">&nbsp;0 = toString</span><br>
+<span style="color:black">&nbsp;1 = setBit</span><br>
+<span style="color:black">&nbsp;2 = clearBit</span><br>
+<span style="color:black">&nbsp;3 = checkBit</span><br>
+<span style="color:black">&nbsp;4 = clearAll</span><br>
+<span style="color:black">&nbsp;5 = setAll</span><br>
+<span style="color:black">&nbsp;6 = score</span><br>
+<span style="color:black">&nbsp;7 = exit</span><br>
+<span style="color:black">Enter option: </span><span style="color:#00B050">6</span><br>
+<span style="color:black">Enter the user's answers:</span><br>
+<span style="color:black">Enter string of 't','T','f', or 'F' MSB to LSB &gt; </span><br>
+<span style="color:#00C87D">tftft</span><br>
+<span style="color:black">Enter 'b' or 'B' for Boolean map, anything else for
+string map &gt; </span><br>
+<span style="color:#00C87D">b</span><br>
+<span style="color:black">Enter the number of valid bits in key: </span><br>
+<span style="color:#00C87D">5</span><br>
+<span style="color:black">40.0</span><br>
+<span style="color:black">Menu of driver options</span><br>
+<span style="color:black">&nbsp;0 = toString</span><br>
+<span style="color:black">&nbsp;1 = setBit</span><br>
+<span style="color:black">&nbsp;2 = clearBit</span><br>
+<span style="color:black">&nbsp;3 = checkBit</span><br>
+<span style="color:black">&nbsp;4 = clearAll</span><br>
+<span style="color:black">&nbsp;5 = setAll</span><br>
+<span style="color:black">&nbsp;6 = score</span><br>
+<span style="color:black">&nbsp;7 = exit</span><br>
+<span style="color:black">Enter option: </span><span style="color:#00B050">6</span><br>
+<span style="color:black">Enter the user's answers:</span><br>
+<span style="color:black">Enter string of 't','T','f', or 'F' MSB to LSB &gt; </span><br>
+<span style="color:#00C87D">tftft</span><br>
+<span style="color:black">Enter 'b' or 'B' for Boolean map, anything else for
+string map &gt; </span><br>
+<span style="color:#00C87D">7</span><br>
+<span style="color:black">Enter the number of valid bits in key: </span><br>
+<span style="color:#00C87D">7</span><br>
+<span style="color:black">57.14285714285714</span><br>
+<span style="color:black">Menu of driver options</span><br>
+<span style="color:black">&nbsp;0 = toString</span><br>
+<span style="color:black">&nbsp;1 = setBit</span><br>
+<span style="color:black">&nbsp;2 = clearBit</span><br>
+<span style="color:black">&nbsp;3 = checkBit</span><br>
+<span style="color:black">&nbsp;4 = clearAll</span><br>
+<span style="color:black">&nbsp;5 = setAll</span><br>
+<span style="color:black">&nbsp;6 = score</span><br>
+<span style="color:black">&nbsp;7 = exit</span><br>
+<span style="color:black">Enter option: </span><span style="color:#00B050">7</span><br>
+<span style="color:black">End of Driver for BitMap</span></span></p>
+
+</div>
+
+
+
+
+</body></html>

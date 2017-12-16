@@ -1,0 +1,1562 @@
+
+<!-- saved from url=(0048)http://cs.sou.edu/~nordquip/cs258/labs/lab4.html -->
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 15">
+<meta name="Originator" content="Microsoft Word 15">
+<link rel="File-List" href="http://cs.sou.edu/~nordquip/cs258/labs/lab4_files/filelist.xml">
+<link rel="Edit-Time-Data" href="http://cs.sou.edu/~nordquip/cs258/labs/lab4_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Lab Assignment Number 4 - cs258</title>
+<link rel="themeData" href="http://cs.sou.edu/~nordquip/cs258/labs/lab4_files/themedata.thmx">
+<link rel="colorSchemeMapping" href="http://cs.sou.edu/~nordquip/cs258/labs/lab4_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>120</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SplitPgBreakAndParaMark/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="371">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536859905 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-536869121 64767 1 0 415 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+h2
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Body Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:18.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Body Text Indent Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Body Text 2 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Body Text Indent 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Body Text Indent 3 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.75in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-hansi-font-family:"Calibri Light";
+	mso-bidi-font-family:"Calibri Light";
+	color:#2E74B5;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-hansi-font-family:"Calibri Light";
+	mso-bidi-font-family:"Calibri Light";
+	color:#5B9BD5;
+	font-weight:bold;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Header;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Footer;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Title;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-hansi-font-family:"Calibri Light";
+	mso-bidi-font-family:"Calibri Light";
+	color:#323E4F;
+	letter-spacing:.25pt;}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Body Text";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.BodyTextIndentChar
+	{mso-style-name:"Body Text Indent Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Body Text Indent";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.BodyText2Char
+	{mso-style-name:"Body Text 2 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Body Text 2";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.BodyTextIndent2Char
+	{mso-style-name:"Body Text Indent 2 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Body Text Indent 2";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.BodyTextIndent3Char
+	{mso-style-name:"Body Text Indent 3 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Body Text Indent 3";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma",sans-serif;
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:.7in 1.0in .7in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang="EN-US" link="blue" vlink="purple" style="tab-interval:.5in">
+
+<div class="WordSection1">
+
+<p class="MsoTitle"><b>&nbsp;</b></p>
+
+<p class="MsoTitle" style="margin-bottom:14.0pt"><b>Lab Assignment Number 4 –
+cs258</b></p>
+
+<p class="MsoNormal"><b><span style="font-size:10.0pt">Goals</span></b></p>
+
+<p class="MsoNormal" style="margin-left:39.75pt;text-indent:-21.75pt"><span style="font-size:10.0pt">1)</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">To
+become comfortable with recursion.</span></p>
+
+<p class="MsoNormal" style="margin-left:39.75pt;text-indent:-21.75pt"><span style="font-size:10.0pt">2)</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">To
+become comfortable with the <i>GUIs </i>using the<i> Graphics</i> class.</span></p>
+
+<p class="MsoNormal" style="margin-left:39.75pt;text-indent:-21.75pt"><span style="font-size:10.0pt">3)</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">To
+understand how to position to pixels on the display.</span></p>
+
+<p class="MsoNormal" style="margin-left:39.75pt;text-indent:-21.75pt"><span style="font-size:10.0pt">4)</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">To
+understand how complex graphics can be created using fractals.</span></p>
+
+<p class="MsoNormal" style="margin-left:39.75pt;text-indent:-21.75pt"><span style="font-size:10.0pt">5)</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">Implement
+a graphics program using recursion and fractals.</span></p>
+
+<p class="MsoNormal"><span style="font-size:10.0pt">&nbsp;</span></p>
+
+<p class="MsoNormal"><b><span style="font-size:10.0pt">Synthesis Questions</span></b></p>
+
+<p class="MsoNormal" style="margin-left:40.5pt;text-indent:-22.5pt"><span style="font-size:10.0pt">1)</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">Why
+<span class="GramE">is a basis case needed</span> for recursive programming?</span></p>
+
+<p class="MsoNormal" style="margin-left:40.5pt;text-indent:-22.5pt"><span style="font-size:10.0pt">2)</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">Are
+recursive methods faster or slower than equivalent iterative methods? Why?</span></p>
+
+<p class="MsoNormal" style="margin-left:40.5pt;text-indent:-22.5pt"><span style="font-size:10.0pt">3)</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">What
+is an activation record?</span></p>
+
+<p class="MsoNormal" style="margin-left:40.5pt;text-indent:-22.5pt"><span style="font-size:10.0pt">4)</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">Suppose
+we pass the value 16 to a recursive method with formal parameter n where the
+basis case is n==<span class="GramE">1</span>. If the basis case is false, a
+recursive call <span class="GramE">is passed</span> the value n/2. What is the
+maximum number of activation records on the stack during the evaluation of this
+method?</span></p>
+
+<p class="MsoNormal" style="margin-left:40.5pt;text-indent:-22.5pt"><span style="font-size:10.0pt">5)</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp; </span><span style="font-size:10.0pt">Define
+the basis case and recursive steps for the following problems:</span></p>
+
+<p class="MsoNormal" style="margin-left:1.0in;text-indent:-.25in"><span style="font-size:10.0pt">a.</span><span class="GramE"><span style="font-size:
+7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span><span style="font-size:10.0pt">Print</span></span><span style="font-size:10.0pt"> the
+odd numbers between 1 and n.<span style="mso-spacerun:yes">&nbsp; </span>Assume n is
+non-negative.</span></p>
+
+<p class="MsoNormal" style="margin-left:1.0in;text-indent:-.25in"><span style="font-size:10.0pt">b.</span><span class="GramE"><span style="font-size:
+7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span><span style="font-size:10.0pt">Count</span></span><span style="font-size:10.0pt"> the
+number of times a substring occurs within a string. For <span class="GramE">example</span>
+"ab" occurs 4 times in "<span class="SpellE">abbaababccab</span>".<span style="mso-spacerun:yes">&nbsp; </span>(Both the string and the substring must be
+supplied to the recursive method.)</span></p>
+
+<p class="MsoNormal"><b><span style="font-size:10.0pt">&nbsp;</span></b></p>
+
+<p class="MsoNormal"><b><span style="font-size:10.0pt">Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b></p>
+
+<p class="MsoNormal" style="margin-left:58.5pt;text-indent:-22.5pt"><span style="font-size:10.0pt">1)</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">The
+listing of <i>Tree.java</i> <span class="GramE">is supplied</span> below as a
+starting point for this lab. A picture of <i>Tree.java</i> output <span class="GramE">is also shown</span>. Either cut/paste the code or type it in. Run
+the program to verify that it works. Study the listing until you understand
+completely what it does. In the Java Class Library (appendix <span class="GramE">M)</span>
+look up <i>Graphics</i>, <i>Point</i>, and <i>Applet</i> if you need to refresh
+yourself on how to use these classes.</span></p>
+
+<p class="MsoNormal" style="margin-left:58.5pt;text-indent:-22.5pt"><span style="font-size:10.0pt">2)</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">This
+is a good lab to make changes one at a time. In this way, you <span class="GramE">won't</span> ever be too far from having a working program. Always
+make a backup copy after each step. Name your new program <i>NewTree.java</i>.
+A picture of the output of Dan’s version of this program <span class="GramE">is
+shown</span> below.</span></p>
+
+<p class="MsoNormal" style="margin-left:58.5pt;text-indent:-22.5pt"><span style="font-size:10.0pt">3)</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">First
+<span class="GramE">let’s</span> tackle some easy changes. </span></p>
+
+<p class="MsoNormal" style="margin-left:1.0in;text-indent:-.25in"><span style="font-size:10.0pt">a.</span><span class="GramE"><span style="font-size:
+7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span><span style="font-size:10.0pt">An</span></span><span style="font-size:10.0pt"> easy
+change is to set the background color in the <span class="SpellE"><i>init</i></span>()
+method. The <i>Applet </i>class method <span class="SpellE"><span class="GramE"><i>setBackground</i></span></span><span class="GramE"><i>(</i></span><i>) </i>can be called to color the sky section.
+There are examples of <span class="SpellE"><span class="GramE"><i>setBackground</i></span></span><span class="GramE"><i>(</i></span><i>) </i>in the text. </span></p>
+
+<p class="MsoNormal" style="margin-left:1.0in;text-indent:-.25in"><span style="font-size:10.0pt">b.</span><span class="GramE"><span style="font-size:
+7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span><span style="font-size:10.0pt">Another</span></span><span style="font-size:10.0pt">
+easy change is to color the grass section green. First use <span class="SpellE"><span class="GramE"><i>setColor</i></span></span><span class="GramE"><i>(</i></span><i>) </i>to
+alter the foreground color that will be used. The graphics method <span class="SpellE"><span class="GramE"><i>fillRect</i></span></span><span class="GramE"><i>(</i></span><i>)
+</i>can <span class="SpellE">than</span> be called. In Dan’s completed program,
+whose output <span class="GramE">is shown</span> below, the grass occupies the
+bottom quarter of the display. Remember that Java considers the point <i>(0<span class="GramE">,0</span>)</i> to be the upper left corner of the display; the
+coordinate <i>(APPLET_WIDTH, APPLET_LENGTH)</i> is the bottom right corner (See
+the listing below); and <i>0 </i>degrees points vertically down towards the
+bottom.</span></p>
+
+<p class="MsoNormal" style="margin-left:1.0in;text-indent:-.25in"><span style="font-size:10.0pt">c.</span><span class="GramE"><span style="font-size:
+7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span><span style="font-size:10.0pt">Next</span></span><span style="font-size:10.0pt"> use <span class="SpellE"><i>setColor</i></span><i>()</i> in the <span class="SpellE"><i>drawTree</i></span><i>()</i>
+method to turn the bark of the tree brown.</span></p>
+
+<p class="MsoNormal" style="margin-left:58.5pt;text-indent:-22.5pt"><span class="GramE"><span style="font-size:10.0pt">4)</span><span style="font-size:
+7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">In this lab</span></span><span style="font-size:10.0pt">
+you will declare many constants. As you proceed with the implementation, if you
+are tempted to write a hard-coded number, declare a constant to hold it, e.g.,
+note how <i>APPLET_WIDTH</i>, and <i>APPLET_LENGTH </i><span class="GramE">are
+declared</span> in the listing below. This strategy allows you to see how
+different values affect the output by changing the value of a constant without having
+to alter your programmed logic.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:58.5pt;text-indent:-22.5pt"><span style="font-size:10.0pt">5)</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">Now <span class="SpellE"><span class="GramE">lets</span></span>
+concentrate enhancing the trees that are drawn. <span class="GramE">We'll</span>
+need to widen the trunk, add leaves, and randomly vary the number/length/angles
+of the tree branches.</span></p>
+
+<p class="MsoNormal" style="margin-left:1.25in;text-indent:-.25in"><span style="font-size:10.0pt">a.</span><span class="GramE"><span style="font-size:
+7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span><span style="font-size:10.0pt">First</span></span><span style="font-size:10.0pt">
+create a method that randomly picks a number between two integers. <span class="GramE">It's</span> a good idea to make this a method because we'll be
+using it many times in this lab. The signature line is: <span class="SpellE"><i>int</i></span><i>
+<span class="SpellE"><span class="GramE">pickRandom</span></span><span class="GramE">(</span><span class="SpellE">int</span> min, <span class="SpellE">int</span> max); </i>You can use
+the method <span class="SpellE"><i>Math.Random</i></span><i>() </i>to pick a
+random number between <i>0 </i>and <i>1</i>. That value needs to <span class="GramE">be scaled</span> between <i>min</i> and <i>max</i>; and the scaled
+result is returned. An example of the use of this method is <i>x = <span class="SpellE"><span class="GramE">pickRandom</span></span><span class="GramE">(</span>3,
+10)</i>. After the call, <i>x</i> will have some value between <span class="GramE"><i>3</i></span><i> </i>through <i>10</i>. <span class="SpellE"><span class="GramE"><i>pickRandom</i></span></span><span class="GramE"><i>(</i></span><i>)</i>
+needs to contain only one executable statement.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.25in;text-indent:-.25in"><span style="font-size:10.0pt">b.</span><span class="GramE"><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;
+</span><span style="font-size:10.0pt">Use</span></span><span style="font-size:
+10.0pt"> <span class="SpellE"><i>pickRandom</i></span><i>()</i> to <span class="SpellE">effect</span> how <span class="SpellE"><i>drawTree</i></span><i>() </i>works.
+The number of branches, the angles of the branches, and the lengths of the
+branches <span class="GramE">will be varied</span> randomly at each level of
+recursion. Dan’s program varied the number of branches between <i>2</i> and <i>6</i>;
+the angles between -40 and <span class="GramE">+40 degrees</span> from that of
+the parent branch; and the length of a branch between <i>1/10 </i>and 9<i>/10</i>
+of that of the parent branch.</span></p>
+
+<p class="MsoNormal" style="margin-left:58.5pt;text-indent:-22.5pt"><span class="GramE"><span style="font-size:10.0pt">6)</span><span style="font-size:
+7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">Next</span></span><span style="font-size:10.0pt">
+widen the branches so they are not stick figures. One way to accomplish this is
+to use the <i>Graphics</i> <span class="SpellE"><span class="GramE"><i>fillPolygon</i></span></span><span class="GramE"><i>(</i></span><i>)</i><b> </b>method. <span class="GramE">You'll</span>
+need four horizontal and vertical coordinates. If <i>(<span class="SpellE">x<span class="GramE">,y</span></span>)</i>, and <i>(<span class="SpellE">x<sup>'</sup>,y</span><sup>'</sup>)
+</i>represents the coordinates for the ends of a branch and <i>width </i>represents
+the width of the branch; the four points to be supplied to <span class="SpellE"><i>fillPolygon</i></span><i>()
+</i>are <i>(<span class="SpellE">x,y</span>), (<span class="SpellE">x+width,y</span>),
+(x<sup>'</sup>+<span class="SpellE">width,y</span><sup>'</sup>), and (<span class="SpellE">x<sup>'</sup>,y</span><sup>'</sup>)</i>. It is a good idea to tie
+the length of the branch to the width. Dan used an <i>8</i> to <i>1 </i>ratio
+in his implementation.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:58.5pt;text-indent:-22.5pt"><span style="font-size:10.0pt">7)</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">We need a method to draw the leaves. This method is to
+be called by <span class="SpellE"><span class="GramE"><i>drawTree</i></span></span><span class="GramE"><i>(</i></span><i>)</i> each time it finishes drawing a branch. See
+if you can figure out the proper place(s) to insert this call in the <i>Tree.java
+</i>listing shown below. </span></p>
+
+<p class="MsoNormal" style="margin-left:1.25in;text-indent:-.25in"><span class="GramE"><span style="font-size:10.0pt">a.</span><span style="font-size:
+7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span><span style="font-size:10.0pt">The following signature should be used to implement
+the method to draw a leaf:<br>
+<br>
+<i>public void <span class="SpellE">drawLeaf</span><br>
+&nbsp;(Graphics <span class="SpellE">g,int</span> <span class="SpellE">x,int</span>
+<span class="SpellE">y,<span style="color:red">int</span></span><span style="color:red"> <span class="SpellE">w,int</span> <span class="SpellE">h,double</span></span>
+<span class="SpellE">angle,int</span> order); <br>
+<br>
+</i>where: <span class="SpellE"><i>x,y</i></span><i> =</i> the coordinates for
+top left corner of a rectangle surrounding the leaf; <span class="SpellE"><i><span style="color:red">w,h</span></i></span><i><span style="color:red"> =</span></i><span style="color:red"> the width and height </span>of <span style="color:red">this
+rectangle</span>; <i>angle =</i> the angle of the direction that the leaf
+points, <i>order =</i> the level of the recursion.&nbsp;</span></span><span style="font-size:10.0pt"> <span style="color:red">You may assume</span> <span style="color:red">the size of your leaf is fine, so long as it fits inside the
+bounding box at angle 0 or angle 180.&nbsp; I.e., you <span class="GramE">don’t</span>
+need to worry about the angle the leaf points when computing whether the leaf
+fits inside the bounding box.</span></span></p>
+
+<p class="MsoNormal" style="margin-left:1.25in;text-indent:-.25in"><span style="font-size:10.0pt">b.</span><span class="GramE"><span style="font-size:
+7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span><span style="font-size:10.0pt">As</span></span><span style="font-size:10.0pt"> an
+initial step draw something simple without recursion. Drawing a circle or oval
+will suffice for this step. A simple <span class="SpellE"><span class="GramE"><i>drawLeaf</i></span></span><span class="GramE"><i>(</i></span><i>) </i>implementation allows you to establish that
+the leaves are being inserted properly on your tree. In this version of <span class="SpellE"><span class="GramE"><i>drawLeaf</i></span></span><span class="GramE"><i>(</i></span><i>)</i>,
+set the color to some shade of green. The statement <i>Color <span class="SpellE">color</span> = new <span class="GramE">Color(</span>102, 153, 51);</i>
+instantiates a dark green. The <i>102, 153,</i> and <i>51</i> in the above
+statement are respectively the red, green, and blue components of the
+instantiated color. </span></p>
+
+<p class="MsoNormal" style="margin-left:1.25in;text-indent:-.25in"><span style="font-size:10.0pt">c.</span><span class="GramE"><span style="font-size:
+7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span><span style="font-size:10.0pt">If</span></span><span style="font-size:10.0pt">
+everything works so far, we're ready to program the real <span class="SpellE"><i>drawLeaf</i></span><i>()
+</i>method. I would suggest that you debug it separately and then plug it into
+the program after you know it works. </span></p>
+
+<p class="MsoNormal" style="margin-left:1.75in;text-indent:-1.75in"><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span class="SpellE"><span style="font-size:10.0pt">i</span></span><span style="font-size:10.0pt">.</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;
+</span><span style="font-size:10.0pt">The first requirement for this method is
+that it should have at least three levels of recursion. The initial call will
+specify the <i>order</i> parameter to be total levels of recursion (ex: <i>3</i>).
+<span class="GramE">The</span> basis case to terminate the recursion is when <i>order
+&lt; 1</i>; Recursive calls to the leaf method specifies the last parameter as <i>order
+- 1</i> so the basis case will eventually be reached.</span></p>
+
+<p class="MsoNormal" style="margin-left:1.75in;text-indent:-1.75in"><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:10.0pt">ii.</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">Your part in this design is to come up with a fractal
+pattern that resembles a leaf. Any reasonable pattern that you come up will
+suffice. See the snowflake example in the text to become familiar with how to
+draw images using fractals. </span></p>
+
+<p class="MsoNormal" style="margin-left:1.75in;text-indent:-1.75in"><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:10.0pt">iii.</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">A final requirement for the <span class="SpellE"><span class="GramE"><i>drawLeaf</i></span></span><span class="GramE"><i>(</i></span><i>)</i>
+method, is to vary the colors at each level of recursion. A simple array <span class="GramE"><i>colors[</i></span><i>] = new Color[3] </i>can be created for
+this purpose (Assuming <i>3</i> levels of recursion). An example of a statement
+that could be used is <span class="SpellE"><span class="GramE"><i>page.setColor</i></span></span><span class="GramE"><i>(</i></span><i>colors[order]);</i> where <i>order</i> is the
+recursion level and <i>page </i>is the instantiated <i>Graphics </i>object.
+Remember to instantiate the array object itself <span class="GramE">and also</span>
+to instantiate each index of the color array with a color. <span class="GramE">Lots
+of</span> <span class="SpellE"><i>rgb</i></span> color patterns can be found on
+the Internet. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.75in;text-indent:-1.75in"><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:10.0pt">iv.</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">The final step relating to the tree phase of the
+project is to draw multiple trees. Randomly select the size and position of
+each tree. The base of the tree should be in the grass area. Dan varied the
+initial tree size between <i>20</i> and <i>100</i> pixels. Make sure to draw at
+least <span class="GramE"><i>3</i></span> trees. You can draw more if you like. Dan
+drew <span class="GramE"><i>8</i></span><i> </i>in his implementation.</span></p>
+
+<p class="MsoNormal" style="margin-left:58.5pt;text-indent:-22.5pt"><span class="GramE"><span style="font-size:10.0pt">8)</span><span style="font-size:
+7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">Now</span></span><span style="font-size:10.0pt"> we
+move to the task of drawing the clouds. The first step is to succeed drawing
+one cloud. A good java method that can be used is <span class="SpellE"><span class="GramE"><i>fillOval</i></span></span><span class="GramE"><i>(</i></span><i>)</i>,
+which is called using the variables x, y, width, and height. Note that the <i>x,
+y</i> arguments given to <span class="SpellE"><span class="GramE"><i>fillOval</i></span></span><span class="GramE"><i>(</i></span><i>) </i>point to the pixel at the top left corner
+of the oval; not the middle. The signature for the method to use for drawing
+clouds is:<br>
+<br>
+<i>void <span class="SpellE">drawCloud</span><br>
+&nbsp;(Graphics page, <span class="SpellE">int</span> x, <span class="SpellE">int</span>
+y, <span class="SpellE">int</span> w, <span class="SpellE">int</span> h, <span class="SpellE">int</span> order)</i> <br>
+<br>
+where: x, y is the coordinate of the top left pixel of the cloud’s bounding box;
+<span class="SpellE"><i>w,h</i></span> indicates the width and height of the
+cloud’s bounding box; order is the level of recursion. <br>
+<br>
+You can design your <span class="SpellE">drawCloud</span> method as you wish, but
+Dan used the following pseudo code to draw his clouds.<br>
+<br>
+<b>RETURN</b> if <i>level</i> &lt;= <span class="GramE">1</span><br>
+Randomly pick a <i>color </i>and fill the oval using <i>x, y, w, and h<o:p></o:p></i></span></p>
+
+<p class="MsoNormal" style="margin-left:1.0in"><span style="font-size:10.0pt;
+color:red">Hint: To make ‘<span class="SpellE">whispier</span>’ looking clouds, create
+new color objects using low ‘alpha’ values.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:58.5pt;text-indent:-22.5pt"><span style="font-size:10.0pt"><br>
+Find the middle of the oval (<span class="SpellE">x+w</span>/2<span class="GramE">,y</span>+h/2)</span></p>
+
+<p class="MsoNormal" style="margin-left:58.5pt"><b><span style="font-size:10.0pt">FOR</span></b><span style="font-size:10.0pt"> a random number of recursive calls<br>
+&nbsp;&nbsp; Randomly pick an <i>angle</i><br>
+&nbsp;&nbsp; Randomly pick a <i>distance</i> from the middle<br>
+&nbsp;&nbsp; Compute a new point (<span class="SpellE"><i>newX</i></span><i>, <span class="SpellE">newY</span></i>) based on <i>angle/distance</i> from <i>x/y</i> <br>
+&nbsp;&nbsp; Randomly pick a new width (<span class="SpellE"><i>newW</i></span>)
+and height (<span class="SpellE"><i>newH</i></span>)<br>
+&nbsp;&nbsp; Recursively call <span class="SpellE">drawCloud</span> using <span class="SpellE"><i>newX</i></span><i>, <span class="SpellE">newY</span>, <span class="SpellE">newW</span>, <span class="SpellE">newH</span></i><br>
+&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:58.5pt;text-indent:-22.5pt"><span style="font-size:10.0pt">9)</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; </span><span style="font-size:10.0pt">The final step is to draw multiple clouds. Randomly
+pick the coordinates and the size of each cloud. Dan’s program drew <i>30 </i>clouds,
+each having a random <i>width and height </i>with a <span class="GramE"><i>75 </i>pixel</span>
+maximum. All of his clouds <span class="GramE">were drawn</span> starting on the
+top half of the screen so they would not likely expand to the grass section.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:58.5pt;text-indent:-22.5pt"><span style="font-size:10.0pt">10)</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span><span style="font-size:10.0pt">Answer the synthesis questions in an rtf or doc file
+(answers.rtf or answers.doc). <b>Type your name and the lab number on this file
+and include the questions with the answers.</b> </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:58.5pt;text-indent:-22.5pt"><span style="font-size:10.0pt">11)</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span><span style="font-size:10.0pt">Zip your Eclipse project along with the synthesis
+answers and submit it on <span class="SpellE">moodle</span>.</span>&nbsp;</p>
+
+<p class="MsoNormal" style="margin-left:58.5pt"><span style="font-size:10.0pt">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:10.0pt">Listing of Tree.java</span></b></p>
+
+<p class="MsoNormal"><span style="font-size:10.0pt">&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:#3F7F5F">// Program to create a recursive tree.</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:#3F7F5F">// <span class="GramE">This</span> is the basis program to be used
+to start the cs258 project on recursion.</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span class="GramE"><b><span style="font-family:Consolas;color:#7F0055">import</span></b></span><span style="font-family:Consolas;color:black"> <span class="SpellE">java.applet.Applet</span>;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span class="GramE"><b><span style="font-family:Consolas;color:#7F0055">import</span></b></span><span style="font-family:Consolas;color:black"> <span class="SpellE">java.awt</span>.*;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas">&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span class="GramE"><b><span style="font-family:Consolas;color:#7F0055">public</span></b></span><span style="font-family:Consolas;color:black"> </span><b><span style="font-family:
+Consolas;color:#7F0055">class</span></b><span style="font-family:Consolas;
+color:black"> <u>Tree</u> </span><b><span style="font-family:Consolas;
+color:#7F0055">extends</span></b><span style="font-family:Consolas;color:black">
+Applet {</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp; </span><span class="GramE"><b><span style="font-family:Consolas;color:#7F0055">private</span></b></span><span style="font-family:Consolas;color:black"> </span><b><span style="font-family:
+Consolas;color:#7F0055">final</span></b><span style="font-family:Consolas;
+color:black"> </span><span class="SpellE"><b><span style="font-family:Consolas;
+color:#7F0055">int</span></b></span><span style="font-family:Consolas;
+color:black"> </span><span style="font-family:Consolas;color:#0000C0">APPLET_WIDTH</span><span style="font-family:Consolas;color:black">= 320;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp; </span><span class="GramE"><b><span style="font-family:Consolas;color:#7F0055">private</span></b></span><span style="font-family:Consolas;color:black"> </span><b><span style="font-family:
+Consolas;color:#7F0055">final</span></b><span style="font-family:Consolas;
+color:black"> </span><span class="SpellE"><b><span style="font-family:Consolas;
+color:#7F0055">int</span></b></span><span style="font-family:Consolas;
+color:black"> </span><span style="font-family:Consolas;color:#0000C0">APPLET_HEIGHT</span><span style="font-family:Consolas;color:black"> = 320;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp; </span><span class="GramE"><b><span style="font-family:Consolas;color:#7F0055">private</span></b></span><span style="font-family:Consolas;color:black"> </span><b><span style="font-family:
+Consolas;color:#7F0055">final</span></b><span style="font-family:Consolas;
+color:black"> </span><b><span style="font-family:Consolas;color:#7F0055">double</span></b><span style="font-family:Consolas;color:black"> </span><span style="font-family:Consolas;
+color:#0000C0">START_SIZE</span><span style="font-family:Consolas;color:black">
+= 110.0;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp; </span><span class="GramE"><b><span style="font-family:Consolas;color:#7F0055">private</span></b></span><span style="font-family:Consolas;color:black"> </span><b><span style="font-family:
+Consolas;color:#7F0055">final</span></b><span style="font-family:Consolas;
+color:black"> </span><b><span style="font-family:Consolas;color:#7F0055">double</span></b><span style="font-family:Consolas;color:black"> </span><span style="font-family:Consolas;
+color:#0000C0">START_ANGLE</span><span style="font-family:Consolas;color:black">=
+180.0;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp; </span><span class="GramE"><b><span style="font-family:Consolas;color:#7F0055">private</span></b></span><span style="font-family:Consolas;color:black"> </span><b><span style="font-family:
+Consolas;color:#7F0055">final</span></b><span style="font-family:Consolas;
+color:black"> </span><b><span style="font-family:Consolas;color:#7F0055">double</span></b><span style="font-family:Consolas;color:black"> </span><span style="font-family:Consolas;
+color:#0000C0">CHANGE_ANGLE</span><span style="font-family:Consolas;color:black">=30.0;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp; </span><span class="GramE"><b><span style="font-family:Consolas;color:#7F0055">private</span></b></span><span style="font-family:Consolas;color:black"> </span><b><span style="font-family:
+Consolas;color:#7F0055">final</span></b><span style="font-family:Consolas;
+color:black"> </span><b><span style="font-family:Consolas;color:#7F0055">double</span></b><span style="font-family:Consolas;color:black"> </span><span style="font-family:Consolas;
+color:#0000C0">FACTOR</span><span style="font-family:Consolas;color:black">=2.0;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp; </span><span class="GramE"><b><span style="font-family:Consolas;color:#7F0055">private</span></b></span><span style="font-family:Consolas;color:black"> </span><b><span style="font-family:
+Consolas;color:#7F0055">final</span></b><span style="font-family:Consolas;
+color:black"> </span><b><span style="font-family:Consolas;color:#7F0055">double</span></b><span style="font-family:Consolas;color:black"> </span><span style="font-family:Consolas;
+color:#0000C0">MIN_SIZE</span><span style="font-family:Consolas;color:black">=10.0;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas">&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp; </span><span style="font-family:Consolas;
+color:#3F7F5F">// Initialize the applet.</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp; </span><span class="GramE"><b><span style="font-family:Consolas;color:#7F0055">public</span></b></span><span style="font-family:Consolas;color:black"> </span><b><span style="font-family:
+Consolas;color:#7F0055">void</span></b><span style="font-family:Consolas;
+color:black"> <span class="SpellE">init</span>(){</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="SpellE"><span class="GramE">setSize</span></span><span class="GramE">(</span></span><span style="font-family:Consolas;color:#0000C0">APPLET_WIDTH</span><span style="font-family:Consolas;color:black">, </span><span style="font-family:
+Consolas;color:#0000C0">APPLET_HEIGHT</span><span style="font-family:Consolas;
+color:black">);</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp; </span><span style="font-family:Consolas;
+color:#3F7F5F">// <span class="GramE">Create</span> the drawing that displays on
+the applet.</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp; </span><span class="GramE"><b><span style="font-family:Consolas;color:#7F0055">public</span></b></span><span style="font-family:Consolas;color:black"> </span><b><span style="font-family:
+Consolas;color:#7F0055">void</span></b><span style="font-family:Consolas;
+color:black"> paint(Graphics </span><span style="font-family:Consolas;
+color:#6A3E3E">page</span><span style="font-family:Consolas;color:black">) {</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="SpellE"><span class="GramE">drawTree</span></span><span class="GramE">(</span></span><span style="font-family:Consolas;color:#6A3E3E">page</span><span style="font-family:
+Consolas;color:black">, </span><span style="font-family:Consolas;color:#0000C0">APPLET_WIDTH</span><span style="font-family:Consolas;color:black">/2, </span><span style="font-family:
+Consolas;color:#0000C0">APPLET_HEIGHT</span><span style="font-family:Consolas;
+color:black">, </span><span style="font-family:Consolas;color:#0000C0">START_SIZE</span><span style="font-family:Consolas;color:black">, </span><span style="font-family:
+Consolas;color:#0000C0">START_ANGLE</span><span style="font-family:Consolas;
+color:black">);</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp; </span><span class="GramE"><b><span style="font-family:Consolas;color:#7F0055">public</span></b></span><span style="font-family:Consolas;color:black"> </span><b><span style="font-family:
+Consolas;color:#7F0055">void</span></b><span style="font-family:Consolas;
+color:black"> <span class="SpellE">drawTree</span>( Graphics </span><span style="font-family:Consolas;color:#6A3E3E">page</span><span style="font-family:
+Consolas;color:black">, </span><span class="SpellE"><b><span style="font-family:
+Consolas;color:#7F0055">int</span></b></span><span style="font-family:Consolas;
+color:black"> </span><span style="font-family:Consolas;color:#6A3E3E">x</span><span style="font-family:Consolas;color:black">, </span><span class="SpellE"><b><span style="font-family:Consolas;color:#7F0055">int</span></b></span><span style="font-family:Consolas;color:black"> </span><span style="font-family:Consolas;
+color:#6A3E3E">y</span><span style="font-family:Consolas;color:black">, </span><b><span style="font-family:Consolas;color:#7F0055">double</span></b><span style="font-family:Consolas;color:black"> </span><span style="font-family:Consolas;
+color:#6A3E3E">size</span><span style="font-family:Consolas;color:black">, </span><b><span style="font-family:Consolas;color:#7F0055">double</span></b><span style="font-family:Consolas;color:black"> </span><span style="font-family:Consolas;
+color:#6A3E3E">angle</span><span style="font-family:Consolas;color:black"> ) {</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Point </span><span class="SpellE"><span style="font-family:Consolas;color:#6A3E3E">endPoint</span></span><span style="font-family:Consolas;color:black"> = <span class="SpellE">calculatePoint</span>(</span><span style="font-family:Consolas;color:#6A3E3E">x</span><span style="font-family:
+Consolas;color:black">, </span><span style="font-family:Consolas;color:#6A3E3E">y</span><span style="font-family:Consolas;color:black">, </span><span style="font-family:
+Consolas;color:#6A3E3E">size</span><span style="font-family:Consolas;
+color:black">, </span><span class="GramE"><span style="font-family:Consolas;
+color:#6A3E3E">angle</span><span style="font-family:Consolas;color:black"> )</span></span><span style="font-family:Consolas;color:black">;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span style="font-family:Consolas;color:#6A3E3E">page</span><span style="font-family:Consolas;color:black">.drawLine</span></span><span style="font-family:Consolas;color:black">(</span><span style="font-family:Consolas;
+color:#6A3E3E">x</span><span style="font-family:Consolas;color:black">, </span><span style="font-family:Consolas;color:#6A3E3E">y</span><span style="font-family:
+Consolas;color:black">, </span><span class="SpellE"><span style="font-family:
+Consolas;color:#6A3E3E">endPoint</span><span style="font-family:Consolas;
+color:black">.</span><span style="font-family:Consolas;color:#0000C0">x</span></span><span style="font-family:Consolas;color:black">, </span><span class="SpellE"><span style="font-family:Consolas;color:#6A3E3E">endPoint</span><span style="font-family:Consolas;color:black">.</span><span style="font-family:Consolas;
+color:#0000C0">y</span></span><span style="font-family:Consolas;color:black">);</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE"><b><span style="font-family:Consolas;color:#7F0055">if</span></b></span><span style="font-family:Consolas;color:black"> (</span><span style="font-family:
+Consolas;color:#6A3E3E">size</span><span style="font-family:Consolas;
+color:black"> &gt; </span><span style="font-family:Consolas;color:#0000C0">MIN_SIZE</span><span style="font-family:Consolas;color:black">) {</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="SpellE"><span class="GramE">drawTree</span></span><span class="GramE">(</span></span><span style="font-family:Consolas;color:#6A3E3E">page</span><span style="font-family:
+Consolas;color:black">, </span><span class="SpellE"><span style="font-family:
+Consolas;color:#6A3E3E">endPoint</span><span style="font-family:Consolas;
+color:black">.</span><span style="font-family:Consolas;color:#0000C0">x</span></span><span style="font-family:Consolas;color:black">, </span><span class="SpellE"><span style="font-family:Consolas;color:#6A3E3E">endPoint</span><span style="font-family:Consolas;color:black">.</span><span style="font-family:Consolas;
+color:#0000C0">y</span></span><span style="font-family:Consolas;color:black">, </span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-family:Consolas;color:#6A3E3E">size</span><span style="font-family:Consolas;color:black">/</span><span style="font-family:Consolas;
+color:#0000C0">FACTOR</span><span style="font-family:Consolas;color:black">, </span><span class="SpellE"><span style="font-family:Consolas;color:#6A3E3E">angle</span><span style="font-family:Consolas;color:black">+</span><span style="font-family:Consolas;
+color:#0000C0">CHANGE_ANGLE</span></span><span style="font-family:Consolas;
+color:black">);</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="SpellE"><span class="GramE">drawTree</span></span><span class="GramE">(</span></span><span style="font-family:Consolas;color:#6A3E3E">page</span><span style="font-family:
+Consolas;color:black">, </span><span class="SpellE"><span style="font-family:
+Consolas;color:#6A3E3E">endPoint</span><span style="font-family:Consolas;
+color:black">.</span><span style="font-family:Consolas;color:#0000C0">x</span></span><span style="font-family:Consolas;color:black">, </span><span class="SpellE"><span style="font-family:Consolas;color:#6A3E3E">endPoint</span><span style="font-family:Consolas;color:black">.</span><span style="font-family:Consolas;
+color:#0000C0">y</span></span><span style="font-family:Consolas;color:black">,</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-family:Consolas;color:#6A3E3E">size</span><span style="font-family:Consolas;color:black">/</span><span style="font-family:Consolas;
+color:#0000C0">FACTOR</span><span style="font-family:Consolas;color:black">, </span><span style="font-family:Consolas;color:#6A3E3E">angle</span><span style="font-family:
+Consolas;color:black">-</span><span style="font-family:Consolas;color:#0000C0">CHANGE_ANGLE</span><span style="font-family:Consolas;color:black">)<span class="GramE">;</span></span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp; </span><span class="GramE"><b><span style="font-family:Consolas;color:#7F0055">public</span></b></span><span style="font-family:Consolas;color:black"> Point <span class="SpellE">calculatePoint</span>(
+</span><span class="SpellE"><b><span style="font-family:Consolas;color:#7F0055">int</span></b></span><span style="font-family:Consolas;color:black"> </span><span style="font-family:Consolas;
+color:#6A3E3E">x</span><span style="font-family:Consolas;color:black">, </span><span class="SpellE"><b><span style="font-family:Consolas;color:#7F0055">int</span></b></span><span style="font-family:Consolas;color:black"> </span><span style="font-family:Consolas;
+color:#6A3E3E">y</span><span style="font-family:Consolas;color:black">, </span><b><span style="font-family:Consolas;color:#7F0055">double</span></b><span style="font-family:Consolas;color:black"> </span><span style="font-family:Consolas;
+color:#6A3E3E">size</span><span style="font-family:Consolas;color:black">, </span><b><span style="font-family:Consolas;color:#7F0055">double</span></b><span style="font-family:Consolas;color:black"> </span><span style="font-family:Consolas;
+color:#6A3E3E">degree</span><span style="font-family:Consolas;color:black"> ) {</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Point </span><span class="SpellE"><span style="font-family:Consolas;color:#6A3E3E">point</span></span><span style="font-family:Consolas;color:black"> = </span><b><span style="font-family:
+Consolas;color:#7F0055">new</span></b><span style="font-family:Consolas;
+color:black"> Point(</span><span style="font-family:Consolas;color:#6A3E3E">x</span><span style="font-family:Consolas;color:black">, </span><span style="font-family:
+Consolas;color:#6A3E3E">y</span><span style="font-family:Consolas;color:black">);</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE"><b><span style="font-family:Consolas;color:#7F0055">double</span></b></span><span style="font-family:Consolas;color:black"> </span><span style="font-family:Consolas;
+color:#6A3E3E">radians</span><span style="font-family:Consolas;color:black"> = <span class="SpellE">Math.<b><i><span style="color:#0000C0">PI</span></i></b></span>/180
+* </span><span style="font-family:Consolas;color:#6A3E3E">degree</span><span style="font-family:Consolas;color:black">;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span style="font-family:Consolas;color:#6A3E3E">point</span><span style="font-family:Consolas;color:black">.</span><span style="font-family:Consolas;
+color:#0000C0">x</span></span><span style="font-family:Consolas;color:black">
++= (</span><span class="SpellE"><b><span style="font-family:Consolas;color:#7F0055">int</span></b></span><span class="GramE"><span style="font-family:Consolas;color:black">)(</span></span><span style="font-family:Consolas;color:#6A3E3E">size</span><span style="font-family:
+Consolas;color:black"> * <span class="SpellE">Math.<i>sin</i></span>(</span><span style="font-family:Consolas;color:#6A3E3E">radians</span><span style="font-family:Consolas;color:black">));</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="SpellE"><span style="font-family:Consolas;color:#6A3E3E">point</span><span style="font-family:Consolas;color:black">.</span><span style="font-family:Consolas;
+color:#0000C0">y</span></span><span style="font-family:Consolas;color:black">
++= (</span><span class="SpellE"><b><span style="font-family:Consolas;color:#7F0055">int</span></b></span><span class="GramE"><span style="font-family:Consolas;color:black">)(</span></span><span style="font-family:Consolas;color:#6A3E3E">size</span><span style="font-family:
+Consolas;color:black"> * <span class="SpellE">Math.<i>cos</i></span>(</span><span style="font-family:Consolas;color:#6A3E3E">radians</span><span style="font-family:Consolas;color:black">)); </span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE"><b><span style="font-family:Consolas;color:#7F0055">return</span></b></span><span style="font-family:Consolas;color:black"> </span><span style="font-family:Consolas;
+color:#6A3E3E">point</span><span style="font-family:Consolas;color:black">;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-family:Consolas;
+color:black">&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal"><span style="font-family:Consolas;color:black">}</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><b><span style="color:black">Output of Tree.java</span></b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><span style="font-size:10.0pt;mso-no-proof:yes"><img width="257" height="274" id="_x0000_i1026" src="./Lab Assignment Number 4 - cs258_files/image001.jpg"></span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><span style="font-size:10.0pt">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-size:10.0pt">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><b>Sample output of
+NewTree.java</b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:10.0pt;mso-no-proof:yes"><img width="250" height="282" id="_x0000_i1025" src="./Lab Assignment Number 4 - cs258_files/image002.jpg"></span></b>0</p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:10.0pt">&nbsp;</span></b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:10.0pt">&nbsp;</span></b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:10.0pt">&nbsp;</span></b></p>
+
+</div>
+
+
+
+
+</body></html>

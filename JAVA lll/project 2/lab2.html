@@ -1,0 +1,2054 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Lab Assignment Number 2 - cs258</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Courier New";}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:"Courier New";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-link:"Body Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:18.0pt;
+	font-family:"Courier New";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{mso-style-link:"Body Text Indent Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{mso-style-link:"Body Text 2 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{mso-style-link:"Body Text Indent 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.5in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{mso-style-link:"Body Text Indent 3 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.75in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Courier New";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri Light",sans-serif;
+	color:#5B9BD5;
+	font-weight:bold;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;
+	font-family:"Courier New";}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;
+	font-family:"Courier New";}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Calibri Light",sans-serif;
+	color:#323E4F;
+	letter-spacing:.25pt;}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	mso-style-link:"Body Text";
+	font-family:"Courier New";}
+span.BodyTextIndentChar
+	{mso-style-name:"Body Text Indent Char";
+	mso-style-link:"Body Text Indent";
+	font-family:"Courier New";}
+span.BodyText2Char
+	{mso-style-name:"Body Text 2 Char";
+	mso-style-link:"Body Text 2";
+	font-family:"Courier New";}
+span.BodyTextIndent2Char
+	{mso-style-name:"Body Text Indent 2 Char";
+	mso-style-link:"Body Text Indent 2";
+	font-family:"Courier New";}
+span.BodyTextIndent3Char
+	{mso-style-name:"Body Text Indent 3 Char";
+	mso-style-link:"Body Text Indent 3";
+	font-family:"Courier New";}
+p.msolistparagraphcxspfirst, li.msolistparagraphcxspfirst, div.msolistparagraphcxspfirst
+	{mso-style-name:msolistparagraphcxspfirst;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.msolistparagraphcxspmiddle, li.msolistparagraphcxspmiddle, div.msolistparagraphcxspmiddle
+	{mso-style-name:msolistparagraphcxspmiddle;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.msolistparagraphcxsplast, li.msolistparagraphcxsplast, div.msolistparagraphcxsplast
+	{mso-style-name:msolistparagraphcxsplast;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:.7in 1.0in .7in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<p class=MsoTitle style='text-align:justify'><b>&nbsp;</b></p>
+
+<p class=MsoTitle style='margin-bottom:14.0pt'><b>Lab Assignment Number 2 –
+cs258</b></p>
+
+<p class=MsoNormal><b>Goals</b></p>
+
+<p class=MsoNormal style='margin-left:45.0pt;text-indent:-27.0pt'>1)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp; </span>Modify
+and test <i>Keyboard.java </i>so it can be easily extended.</p>
+
+<p class=MsoNormal style='margin-left:45.0pt;text-indent:-27.0pt'>2)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp; </span>Create
+a sub-class called <i>Textread </i>that extends <i>Keyboard.java </i>and allows
+access to multiple files<i>.</i></p>
+
+<p class=MsoNormal style='margin-left:45.0pt;text-indent:-27.0pt'>3)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp; </span>Understand
+enough of the original <i>Keyboard.java </i>program to answer the synthesis
+questions that follow.</p>
+
+<p class=MsoNormal style='margin-left:45.0pt;text-indent:-27.0pt'>4)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp; </span>Practice
+accessing binary and text data from files.</p>
+
+<p class=MsoNormal style='margin-left:45.0pt;text-indent:-27.0pt'>5)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp; </span>Practice
+accessing files sequentially and randomly.</p>
+
+<p class=MsoNormal style='margin-left:45.0pt;text-indent:-27.0pt'>6) Practice
+inheritance and exception handling</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Synthesis Questions</b></p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>1)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp; </span>Explain
+in one or two sentences, how the original <i>Keyboard.java </i>used static
+modifiers. </p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>2)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp; </span>Why
+did we have to remove <i>static </i>from all methods and variables of <i>Keyboard.java</i>?</p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>3)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp; </span>Why
+did the <i>in </i>variable in <i>Keyboard.java </i>need to have a modifier of <i>protected
+</i>instead of <i>private?</i></p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>4)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp; </span>Explain
+in one or two sentences the statement in the original version of <i>Keyboard.java</i>
+that creates the stream used by the program for keyboard input.</p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>5)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp; </span>Explain
+the differences (in several sentences) between sequential text files,
+sequential binary files, and random files. </p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>6)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp; </span>Regarding
+packages:</p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'>a.<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'> </span>How can two
+classes compiled from separate java files be part of the same package?</p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>7) The <i>Keyboard.java
+getNextInputToken</i> method catches exceptions. Suppose you removed the
+try/catch from this method. Under what situation would this cause the <i>TextReader</i>
+program to fail?</p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>8)In <i>Keyboard.java</i>,
+is <i>'\n'</i> needed as a delimiter in the <i>getNextInputToken </i>method?
+Why or why not?</p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>9)How did we
+use polymorphism in this project? </p>
+
+<p class=MsoNormal style='margin-left:.25in'><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>Program
+Requirements&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b></p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>1)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp; </span>Create
+a lab2 folder for this project</p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>2)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp; </span>Use
+the main driver program <i>(called Writers.java)</i> that Dan provides below to
+write files of differing types. You can copy and paste this code, but make sure
+the spaces variable copies correctly. The copy and paste operation eliminates
+the spaces between the quotes on some systems.</p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>3)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp; </span>In
+the writers program, fill in the code for the three classes (Random, Binary,
+and Text). In each class, you will need a constructor, a write method, and a
+close method. The constructor opens the file, the write method writes a record,
+and the close method closes the file. </p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>4)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp; </span>Other
+than what was described above, don't change the program in any way. The program
+asks for a file type (random, binary, or text) and the name of the file to
+create. In a loop, it inputs a person's name (string), a person's age (int),
+and a person's annual salary (double). It writes to a file of the appropriate
+type. The loop terminates when the user indicates that there is no more input.
+The program then asks whether to create another file. If the answer is yes, the
+whole process starts again. Make sure all of the .java files implementing the
+driver programs are saved in your lab2 folder, but not in the cs258 sub-folder
+(see instruction 8) below).</p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>5)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp; </span><b>Note:
+The method signatures for accessing all of the three types of files (binary,
+random, and text) are in notes/week02.ppt. </b></p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>6)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp; </span>In
+your <i>lab2</i> project src folder, create a subfolder named cs258. Save <a
+href="../demos/Keyboard.java">../demos/<i>Keyboard.java</i></a><i> </i>to the
+cs258 folder. Add a new first line of <i>Keyboard.java</i> with the statement, <i>package
+cs258;</i>. This line will make <i>Keyboard.java</i> part of the <i>cs258</i>
+package. The driver program shown below has an <i>import ‘cs258.*;’</i>
+statement to access the java files in this package.</p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>7)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp; </span>Modify
+<i>Keyboard.java. </i>We want to modify this class so it can be extended to
+allow access to multiple files. The changes follow:</p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'>a.<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'> </span>Remove all
+static references. This action is necessary so there can be an input stream
+variable named <i>in</i> in each object.</p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'>b.<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'> </span>Change the <i>private
+</i>modifier of the <i>in<span style='color:red'> </span></i>variable to <i>protected.
+</i></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'>c.<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'> </span>Remove the
+initialization from the original declaration line for the <i>in </i>variable.&nbsp;
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:40.5pt;text-indent:-22.5pt'>8)Create a class <i>TextRead</i> in the
+file <i>TextRead.java;</i> store this file<i> </i>in the <i>cs258</i>
+folder.&nbsp; This class should also be part of the <i>cs258 </i>package so be
+sure to include the <i>package</i> statement. This class should extend the
+Keyboard class, so all of Keyboard.java’s methods are available. It should
+contain a constructor that instantiates a sequential text file stream. It needs
+also to include an end of file and a close method. Note that since it extends
+the <i>Keyboard </i>class, all of <i>Keyboard's </i>methods are available. The
+class API follows:<br>
+<br>
+public class TextRead extends Keyboard<br>
+{&nbsp; <br>
+&nbsp;&nbsp; public TextRead(String filename) throws FileNotFoundException {}<br>
+&nbsp;&nbsp; public void close() throws IOException {}<br>
+&nbsp;&nbsp; public boolean endOfFile() {<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;// hint: check the BufferedReader API for some
+helpful methods<br>
+&nbsp;&nbsp; }<br>
+} <br>
+<br>
+Your job is to complete these three methods.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:40.5pt;text-indent:-22.5pt'>9)Below is the source for a driver
+program that will read text files <i>(TextReader.java) </i>and display their
+contents. It reads two files, which you must write using Writers.main().&nbsp;
+Make sure your <i>TextRead</i> class returns what TextReader.main() needs. Be
+careful if you cut and paste this program. The string variable <i>spaces </i>doesn't
+cut and paste correctly. You will have to correct it appropriately. <b>Do not
+make any other changes to this program.</b> </p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>10)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp; </span>Write
+a program named BinReader to read binary files. This program must ask the user
+for a file name.&nbsp; It should assume this file is a Binary file written by
+the Writers program.&nbsp; It must then read and display all the records in the
+file and quit.&nbsp; </p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>11)<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp; </span>Write
+a main program named RandReader to read random files. This program must ask the
+user for a file name.&nbsp; It should assume this file is a Random file written
+by the Writers program.&nbsp; <b>This program must read and display the records
+in the file in <i>reverse order</i> then quit. DO NOT USE AN ARRAY!</b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:40.5pt;text-indent:-22.5pt'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:40.5pt;text-indent:-22.5pt'>Here are test cases for your programs:</p>
+
+<p class=MsoListParagraph style='margin-bottom:12.0pt;text-indent:-.25in'>a.<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'> </span>Run Writers
+and provide the following inputs:</p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>text</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>seqtext.dat</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>jb</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>11</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>11011.01</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>jimbob 2</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>22</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>22011.02</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>jane Doe</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>33</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>330011.33</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>quit</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>y</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>text</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>seqtext2.dat</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>jb</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>11</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>11022.01</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>jimbob 2</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>22</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>22022.02</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>quit</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'><span
+style='color:#385723'>n</span></p>
+
+<p class=MsoNormal style='margin-left:40.3pt;text-indent:-22.3pt'>&nbsp;</p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'>b.<span style='font-size:
+7.0pt;font-family:"Times New Roman",serif'> </span>Run TextReader.&nbsp; It
+should run and produce the following output:</p>
+
+<p class=MsoNormal style='margin-left:.25in'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>Text file
+reader</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>jb&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+11 $11,011.01</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>jb&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+11 $11,022.01</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>jimbob
+2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+22 $22,011.02</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>jimbob
+2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+22 $22,022.02</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>jane
+Doe&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+33 $330,011.33</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>TextReader
+complete; data printed</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='margin-bottom:12.0pt;text-indent:-.25in'>c.<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'> </span>Produce a
+binary file named bin.dat and a random file named rand.dat.&nbsp; Run Writers
+and provide the following input: </p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>binary</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>bin.dat</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>jb</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>11</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>11000.01</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>jimbob
+2</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>22</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>22002.02</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>jane
+Doe</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>33</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>330033.33</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>quit</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>y</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>random</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>rand.dat</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>jb</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>11</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>11000.01</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>jimbob
+2</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>22</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>22002.02</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>quit</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:.25in'><span style='color:#385723'>n</span></p>
+
+<p class=MsoListParagraph style='margin-bottom:12.0pt;text-indent:-.25in'>d.<span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'> </span>Run
+BinReader.&nbsp; <span style='color:#385723'>Inputs in green</span>, <span
+style='color:red'>outputs in red</span>.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>bin.dat</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>Binary
+file reader</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>jb&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+11 $11,000.01</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>jimbob
+2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+22 $22,002.02</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>jane
+Doe&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+33 $330,033.33</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>BinReader
+complete; data printed</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'>&nbsp;</p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'>e.<span style='font-size:
+7.0pt;font-family:"Times New Roman",serif'> </span>Run RandReader.&nbsp; <span
+style='color:#385723'>Inputs in green</span>, <span style='color:red'>outputs
+in red</span>.</p>
+
+<p class=MsoNormal style='margin-left:.25in'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:#385723'>rand.dat</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>Binary
+file reader</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>jimbob
+2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+22 $22,002.02</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>jb&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+11 $11,000.01</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='color:red'>RandReader
+complete; data printed.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:.25in'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>12)Answer the
+synthesis questions in an rtf or doc file (answers.rtf or answers.doc). <b>Type
+your name and the lab number on this file and include the questions with the
+answers.<br>
+</b>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>13)Zip your
+Eclipse project along with the document containing the synthesis answers and
+submit on moodle.</p>
+
+<p class=MsoNormal style='margin-left:40.5pt;text-indent:-22.5pt'>&nbsp;</p>
+
+<p class=MsoNormal style='text-autospace:none'><br>
+<span style='font-family:Consolas;color:#3F7F5F'>// This program reads the seqText.dat
+and seqText2.dat files.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:#3F7F5F'>// These files were created by TextWriter.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:#3F7F5F'>// They are in sequential text format.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:#3F7F5F'>// They contain records of name, age, and salary.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'> </span></p>
+
+<p class=MsoNormal style='text-autospace:none'><b><span style='font-family:
+Consolas;color:#7F0055'>import</span></b><span style='font-family:Consolas;
+color:black'> java.io.*;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><b><span style='font-family:
+Consolas;color:#7F0055'>import</span></b><span style='font-family:Consolas;
+color:black'> java.text.*;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><b><span style='font-family:
+Consolas;color:#7F0055'>import</span></b><span style='font-family:Consolas;
+color:black'> <u>cs258</u>.*;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'> </span></p>
+
+<p class=MsoNormal style='text-autospace:none'><b><span style='font-family:
+Consolas;color:#7F0055'>public</span></b><span style='font-family:Consolas;
+color:black'> </span><b><span style='font-family:Consolas;color:#7F0055'>class</span></b><span
+style='font-family:Consolas;color:black'> TextReader {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><b><span style='font-family:Consolas;color:#7F0055'>public</span></b><span
+style='font-family:Consolas;color:black'> </span><b><span style='font-family:
+Consolas;color:#7F0055'>static</span></b><span style='font-family:Consolas;
+color:black'> </span><b><span style='font-family:Consolas;color:#7F0055'>final</span></b><span
+style='font-family:Consolas;color:black'> </span><b><span style='font-family:
+Consolas;color:#7F0055'>int</span></b><span style='font-family:Consolas;
+color:black'> </span><b><i><span style='font-family:Consolas;color:#0000C0'>NAME_SIZE</span></i></b><span
+style='font-family:Consolas;color:black'>=30;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><b><span style='font-family:Consolas;color:#7F0055'>public</span></b><span
+style='font-family:Consolas;color:black'> </span><b><span style='font-family:
+Consolas;color:#7F0055'>static</span></b><span style='font-family:Consolas;
+color:black'> </span><b><span style='font-family:Consolas;color:#7F0055'>void</span></b><span
+style='font-family:Consolas;color:black'> main(String </span><span
+style='font-family:Consolas;color:#6A3E3E'>args</span><span style='font-family:
+Consolas;color:black'>[]) {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        String </span><span style='font-family:Consolas;
+color:#6A3E3E'>name</span><span style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><b><span style='font-family:Consolas;color:#7F0055'>int</span></b><span
+style='font-family:Consolas;color:black'>    </span><span style='font-family:
+Consolas;color:#6A3E3E'>age</span><span style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><b><span style='font-family:Consolas;color:#7F0055'>double</span></b><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:#6A3E3E'>salary</span><span style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'> </span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><b><span style='font-family:Consolas;color:#7F0055'>if</span></b><span
+style='font-family:Consolas;color:black'> (!</span><b><span style='font-family:
+Consolas;color:#7F0055'>new</span></b><span style='font-family:Consolas;
+color:black'> File(</span><span style='font-family:Consolas;color:#2A00FF'>&quot;seqtext.dat&quot;</span><span
+style='font-family:Consolas;color:black'>).exists() ||</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                !</span><b><span style='font-family:Consolas;
+color:#7F0055'>new</span></b><span style='font-family:Consolas;color:black'>
+File(</span><span style='font-family:Consolas;color:#2A00FF'>&quot;seqtext2.dat&quot;</span><span
+style='font-family:Consolas;color:black'>).exists()) {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>out</span></i></b><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;Files don't exist&quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            System.<i>exit</i>(1);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        TextRead </span><span style='font-family:Consolas;
+color:#6A3E3E'>file1</span><span style='font-family:Consolas;color:black'> = </span><b><span
+style='font-family:Consolas;color:#7F0055'>null</span></b><span
+style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        TextRead </span><span style='font-family:Consolas;
+color:#6A3E3E'>file2</span><span style='font-family:Consolas;color:black'> = </span><b><span
+style='font-family:Consolas;color:#7F0055'>null</span></b><span
+style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><b><span style='font-family:Consolas;color:#7F0055'>try</span></b><span
+style='font-family:Consolas;color:black'> {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><span style='font-family:Consolas;color:#6A3E3E'>file1</span><span
+style='font-family:Consolas;color:black'> = </span><b><span style='font-family:
+Consolas;color:#7F0055'>new</span></b><span style='font-family:Consolas;
+color:black'> TextRead(</span><span style='font-family:Consolas;color:#2A00FF'>&quot;seqtext.dat&quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><span style='font-family:Consolas;color:#6A3E3E'>file2</span><span
+style='font-family:Consolas;color:black'> = </span><b><span style='font-family:
+Consolas;color:#7F0055'>new</span></b><span style='font-family:Consolas;
+color:black'> TextRead(</span><span style='font-family:Consolas;color:#2A00FF'>&quot;seqtext2.dat&quot;</span><span
+style='font-family:Consolas;color:black'>);      </span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><b><span style='font-family:Consolas;color:#7F0055'>catch</span></b><span
+style='font-family:Consolas;color:black'> (Exception </span><span
+style='font-family:Consolas;color:#6A3E3E'>e</span><span style='font-family:
+Consolas;color:black'>) {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>err</span></i></b><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;An unexpected exception,
+&quot;</span><span style='font-family:Consolas;color:black'> +</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><span style='font-family:Consolas;color:#6A3E3E'>e</span><span
+style='font-family:Consolas;color:black'>.toString() + </span><span
+style='font-family:Consolas;color:#2A00FF'>&quot; occurred:&quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><span style='font-family:Consolas;color:#6A3E3E'>e</span><span
+style='font-family:Consolas;color:black'>.printStackTrace(System.</span><b><i><span
+style='font-family:Consolas;color:#0000C0'>err</span></i></b><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>err</span></i></b><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;\nPlease report this error to
+Pete Nordquist&quot;</span><span style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            System.<i>exit</i>(1);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        NumberFormat </span><span style='font-family:Consolas;
+color:#6A3E3E'>money</span><span style='font-family:Consolas;color:black'>   =
+NumberFormat.<i>getCurrencyInstance</i>();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        DecimalFormat </span><span style='font-family:Consolas;
+color:#6A3E3E'>fmt</span><span style='font-family:Consolas;color:black'>    = </span><b><span
+style='font-family:Consolas;color:#7F0055'>new</span></b><span
+style='font-family:Consolas;color:black'> DecimalFormat(</span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;##0.##&quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        String        </span><span style='font-family:Consolas;
+color:#6A3E3E'>spaces</span><span style='font-family:Consolas;color:black'> = </span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;                             
+&quot;</span><span style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'> </span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>out</span></i></b><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;Text file reader\n&quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><b><span style='font-family:Consolas;color:#7F0055'>do</span></b><span
+style='font-family:Consolas;color:black'> {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><b><span style='font-family:Consolas;
+color:#7F0055'>if</span></b><span style='font-family:Consolas;color:black'> (!</span><span
+style='font-family:Consolas;color:#6A3E3E'>file1</span><span style='font-family:
+Consolas;color:black'>.endOfFile()) {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><span style='font-family:Consolas;
+color:#6A3E3E'>name</span><span style='font-family:Consolas;color:black'> = </span><span
+style='font-family:Consolas;color:#6A3E3E'>file1</span><span style='font-family:
+Consolas;color:black'>.readString();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><span style='font-family:Consolas;
+color:#6A3E3E'>age</span><span style='font-family:Consolas;color:black'>  = </span><span
+style='font-family:Consolas;color:#6A3E3E'>file1</span><span style='font-family:
+Consolas;color:black'>.readInt();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><span style='font-family:Consolas;
+color:#6A3E3E'>salary</span><span style='font-family:Consolas;color:black'> = </span><span
+style='font-family:Consolas;color:#6A3E3E'>file1</span><span style='font-family:
+Consolas;color:black'>.readDouble();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>out</span></i></b><span style='font-family:Consolas;color:black'>.print(</span><span
+style='font-family:Consolas;color:#6A3E3E'>name</span><span style='font-family:
+Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><b><span style='font-family:Consolas;
+color:#7F0055'>if</span></b><span style='font-family:Consolas;color:black'> (</span><span
+style='font-family:Consolas;color:#6A3E3E'>name</span><span style='font-family:
+Consolas;color:black'>.length() &lt; </span><b><i><span style='font-family:
+Consolas;color:#0000C0'>NAME_SIZE</span></i></b><span style='font-family:Consolas;
+color:black'>)              </span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    System.</span><b><i><span style='font-family:
+Consolas;color:#0000C0'>out</span></i></b><span style='font-family:Consolas;
+color:black'>.print(</span><span style='font-family:Consolas;color:#6A3E3E'>spaces</span><span
+style='font-family:Consolas;color:black'>.substring(0, </span><b><i><span
+style='font-family:Consolas;color:#0000C0'>NAME_SIZE</span></i></b><span
+style='font-family:Consolas;color:black'>-</span><span style='font-family:Consolas;
+color:#6A3E3E'>name</span><span style='font-family:Consolas;color:black'>.length())
+);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>out</span></i></b><span style='font-family:Consolas;color:black'>.println
+( </span><span style='font-family:Consolas;color:#2A00FF'>&quot; &quot;</span><span
+style='font-family:Consolas;color:black'> + </span><span style='font-family:
+Consolas;color:#6A3E3E'>fmt</span><span style='font-family:Consolas;color:black'>.format(</span><span
+style='font-family:Consolas;color:#6A3E3E'>age</span><span style='font-family:
+Consolas;color:black'>) + </span><span style='font-family:Consolas;color:#2A00FF'>&quot;
+&quot;</span><span style='font-family:Consolas;color:black'> + </span><span
+style='font-family:Consolas;color:#6A3E3E'>money</span><span style='font-family:
+Consolas;color:black'>.format(</span><span style='font-family:Consolas;
+color:#6A3E3E'>salary</span><span style='font-family:Consolas;color:black'>) );</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><b><span style='font-family:Consolas;
+color:#7F0055'>if</span></b><span style='font-family:Consolas;color:black'> (!</span><span
+style='font-family:Consolas;color:#6A3E3E'>file2</span><span style='font-family:
+Consolas;color:black'>.endOfFile()) {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><span style='font-family:Consolas;
+color:#6A3E3E'>name</span><span style='font-family:Consolas;color:black'> = </span><span
+style='font-family:Consolas;color:#6A3E3E'>file2</span><span style='font-family:
+Consolas;color:black'>.readString();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><span style='font-family:Consolas;
+color:#6A3E3E'>age</span><span style='font-family:Consolas;color:black'>  = </span><span
+style='font-family:Consolas;color:#6A3E3E'>file2</span><span style='font-family:
+Consolas;color:black'>.readInt();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><span style='font-family:Consolas;
+color:#6A3E3E'>salary</span><span style='font-family:Consolas;color:black'> = </span><span
+style='font-family:Consolas;color:#6A3E3E'>file2</span><span style='font-family:
+Consolas;color:black'>.readDouble();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>out</span></i></b><span style='font-family:Consolas;color:black'>.print(</span><span
+style='font-family:Consolas;color:#6A3E3E'>name</span><span style='font-family:
+Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><b><span style='font-family:Consolas;
+color:#7F0055'>if</span></b><span style='font-family:Consolas;color:black'> (</span><span
+style='font-family:Consolas;color:#6A3E3E'>name</span><span style='font-family:
+Consolas;color:black'>.length() &lt; </span><b><i><span style='font-family:
+Consolas;color:#0000C0'>NAME_SIZE</span></i></b><span style='font-family:Consolas;
+color:black'>)     </span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    System.</span><b><i><span style='font-family:
+Consolas;color:#0000C0'>out</span></i></b><span style='font-family:Consolas;
+color:black'>.print</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                        ( </span><span style='font-family:Consolas;
+color:#6A3E3E'>spaces</span><span style='font-family:Consolas;color:black'>.substring(0,
+</span><b><i><span style='font-family:Consolas;color:#0000C0'>NAME_SIZE</span></i></b><span
+style='font-family:Consolas;color:black'>-</span><span style='font-family:Consolas;
+color:#6A3E3E'>name</span><span style='font-family:Consolas;color:black'>.length())
+);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>out</span></i></b><span style='font-family:Consolas;color:black'>.println</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    ( </span><span style='font-family:Consolas;
+color:#2A00FF'>&quot; &quot;</span><span style='font-family:Consolas;
+color:black'> + </span><span style='font-family:Consolas;color:#6A3E3E'>fmt</span><span
+style='font-family:Consolas;color:black'>.format(</span><span style='font-family:
+Consolas;color:#6A3E3E'>age</span><span style='font-family:Consolas;color:black'>)
++ </span><span style='font-family:Consolas;color:#2A00FF'>&quot; &quot;</span><span
+style='font-family:Consolas;color:black'> + </span><span style='font-family:
+Consolas;color:#6A3E3E'>money</span><span style='font-family:Consolas;
+color:black'>.format(</span><span style='font-family:Consolas;color:#6A3E3E'>salary</span><span
+style='font-family:Consolas;color:black'>) );</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        }  </span><b><span style='font-family:Consolas;color:#7F0055'>while</span></b><span
+style='font-family:Consolas;color:black'> (!</span><span style='font-family:
+Consolas;color:#6A3E3E'>file1</span><span style='font-family:Consolas;
+color:black'>.endOfFile()||!</span><span style='font-family:Consolas;
+color:#6A3E3E'>file2</span><span style='font-family:Consolas;color:black'>.endOfFile());</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'> </span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><b><span style='font-family:Consolas;color:#7F0055'>try</span></b><span
+style='font-family:Consolas;color:black'> {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><span style='font-family:Consolas;color:#6A3E3E'>file1</span><span
+style='font-family:Consolas;color:black'>.close();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><span style='font-family:Consolas;color:#6A3E3E'>file2</span><span
+style='font-family:Consolas;color:black'>.close();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><b><span style='font-family:Consolas;color:#7F0055'>catch</span></b><span
+style='font-family:Consolas;color:black'> (Exception </span><span
+style='font-family:Consolas;color:#6A3E3E'>e</span><span style='font-family:
+Consolas;color:black'>) {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>err</span></i></b><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;An unexpected exception,
+&quot;</span><span style='font-family:Consolas;color:black'> +</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><span style='font-family:Consolas;color:#6A3E3E'>e</span><span
+style='font-family:Consolas;color:black'>.toString() + </span><span
+style='font-family:Consolas;color:#2A00FF'>&quot; occurred:&quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><span style='font-family:Consolas;color:#6A3E3E'>e</span><span
+style='font-family:Consolas;color:black'>.printStackTrace(System.</span><b><i><span
+style='font-family:Consolas;color:#0000C0'>err</span></i></b><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>err</span></i></b><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;\nPlease report this error to
+Pete Nordquist&quot;</span><span style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            System.<i>exit</i>(1);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>out</span></i></b><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;\nTextReader complete; data
+printed&quot;</span><span style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-autospace:none'><span
+style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:10.0pt;
+color:#FA6400'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:#3F7F5F'>// This program writes different types of files.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:#3F7F5F'>//    Random, Binary, and Text.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:#3F7F5F'>// Created 3/29/2004 for the lab 2 cs258 project.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><b><span style='font-family:
+Consolas;color:#7F0055'>import</span></b><span style='font-family:Consolas;
+color:black'> java.io.*;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><b><span style='font-family:
+Consolas;color:#7F0055'>import</span></b><span style='font-family:Consolas;
+color:black'> java.security.*;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><b><span style='font-family:
+Consolas;color:#7F0055'>public</span></b><span style='font-family:Consolas;
+color:black'> </span><b><span style='font-family:Consolas;color:#7F0055'>class</span></b><span
+style='font-family:Consolas;color:black'> Writers {   </span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><b><span style='font-family:Consolas;color:#7F0055'>private</span></b><span
+style='font-family:Consolas;color:black'> </span><b><span style='font-family:
+Consolas;color:#7F0055'>final</span></b><span style='font-family:Consolas;
+color:black'> </span><b><span style='font-family:Consolas;color:#7F0055'>static</span></b><span
+style='font-family:Consolas;color:black'> </span><b><span style='font-family:
+Consolas;color:#7F0055'>int</span></b><span style='font-family:Consolas;
+color:black'> </span><b><i><span style='font-family:Consolas;color:#0000C0'>NAME_SIZE</span></i></b><span
+style='font-family:Consolas;color:black'>  = 30;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><b><span style='font-family:Consolas;color:#7F0055'>private</span></b><span
+style='font-family:Consolas;color:black'> </span><b><span style='font-family:
+Consolas;color:#7F0055'>final</span></b><span style='font-family:Consolas;
+color:black'> </span><b><span style='font-family:Consolas;color:#7F0055'>static</span></b><span
+style='font-family:Consolas;color:black'> String </span><b><i><span
+style='font-family:Consolas;color:#0000C0'>spaces</span></i></b><span
+style='font-family:Consolas;color:black'>  = </span><span style='font-family:
+Consolas;color:#2A00FF'>&quot;                              &quot;</span><span
+style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><span style='font-family:Consolas;color:#3F7F5F'>//
+Keyboard input stream.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><b><span style='font-family:Consolas;color:#7F0055'>private</span></b><span
+style='font-family:Consolas;color:black'> </span><b><span style='font-family:
+Consolas;color:#7F0055'>final</span></b><span style='font-family:Consolas;
+color:black'> </span><b><span style='font-family:Consolas;color:#7F0055'>static</span></b><span
+style='font-family:Consolas;color:black'> BufferedReader </span><b><i><span
+style='font-family:Consolas;color:#0000C0'>in</span></i></b><span
+style='font-family:Consolas;color:black'> =</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><b><span style='font-family:Consolas;color:#7F0055'>new</span></b><span
+style='font-family:Consolas;color:black'> BufferedReader(</span><b><span
+style='font-family:Consolas;color:#7F0055'>new</span></b><span
+style='font-family:Consolas;color:black'> InputStreamReader(System.</span><b><i><span
+style='font-family:Consolas;color:#0000C0'>in</span></i></b><span
+style='font-family:Consolas;color:black'>));</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><b><span style='font-family:Consolas;color:#7F0055'>public</span></b><span
+style='font-family:Consolas;color:black'> </span><b><span style='font-family:
+Consolas;color:#7F0055'>static</span></b><span style='font-family:Consolas;
+color:black'> </span><b><span style='font-family:Consolas;color:#7F0055'>void</span></b><span
+style='font-family:Consolas;color:black'> main(String </span><span
+style='font-family:Consolas;color:#6A3E3E'>args</span><span style='font-family:
+Consolas;color:black'>[]) {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><span style='font-family:Consolas;color:#3F7F5F'>//
+variables needed for Files.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        Writer </span><span style='font-family:Consolas;
+color:#6A3E3E'>out</span><span style='font-family:Consolas;color:black'> = </span><b><span
+style='font-family:Consolas;color:#7F0055'>null</span></b><span
+style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        String </span><span style='font-family:Consolas;
+color:#6A3E3E'>fileType</span><span style='font-family:Consolas;color:black'> =
+</span><b><span style='font-family:Consolas;color:#7F0055'>null</span></b><span
+style='font-family:Consolas;color:black'>, </span><span style='font-family:
+Consolas;color:#6A3E3E'>fileName</span><span style='font-family:Consolas;
+color:black'> = </span><b><span style='font-family:Consolas;color:#7F0055'>null</span></b><span
+style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><span style='font-family:Consolas;color:#3F7F5F'>//
+variables needed for data.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        String  </span><span style='font-family:Consolas;
+color:#6A3E3E'>name</span><span style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><b><span style='font-family:Consolas;color:#7F0055'>int</span></b><span
+style='font-family:Consolas;color:black'>     </span><span style='font-family:
+Consolas;color:#6A3E3E'>age</span><span style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><b><span style='font-family:Consolas;color:#7F0055'>double</span></b><span
+style='font-family:Consolas;color:black'>  </span><span style='font-family:
+Consolas;color:#6A3E3E'>salary</span><span style='font-family:Consolas;
+color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        String  </span><span style='font-family:Consolas;
+color:#6A3E3E'>doMore</span><span style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><b><span style='font-family:Consolas;color:#7F0055'>boolean</span></b><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:#6A3E3E'>quit</span><span style='font-family:Consolas;color:black'>, </span><span
+style='font-family:Consolas;color:#6A3E3E'>moreFiles</span><span
+style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>out</span></i></b><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;File writer program&quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><b><span style='font-family:Consolas;color:#7F0055'>do</span></b><span
+style='font-family:Consolas;color:black'> {  </span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><b><span style='font-family:Consolas;
+color:#7F0055'>try</span></b><span style='font-family:Consolas;color:black'> {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><b><span style='font-family:Consolas;
+color:#7F0055'>do</span></b><span style='font-family:Consolas;color:black'> {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    System.</span><b><i><span style='font-family:
+Consolas;color:#0000C0'>out</span></i></b><span style='font-family:Consolas;
+color:black'>.print(</span><span style='font-family:Consolas;color:#2A00FF'>&quot;Enter
+file type (text, binary, random): &quot;</span><span style='font-family:Consolas;
+color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    </span><span style='font-family:Consolas;
+color:#6A3E3E'>fileType</span><span style='font-family:Consolas;color:black'> =
+</span><b><i><span style='font-family:Consolas;color:#0000C0'>in</span></i></b><span
+style='font-family:Consolas;color:black'>.readLine().toLowerCase();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                } </span><b><span style='font-family:Consolas;
+color:#7F0055'>while</span></b><span style='font-family:Consolas;color:black'>
+( !(</span><span style='font-family:Consolas;color:#2A00FF'>&quot;text&quot;</span><span
+style='font-family:Consolas;color:black'>.startsWith(</span><span
+style='font-family:Consolas;color:#6A3E3E'>fileType</span><span
+style='font-family:Consolas;color:black'>) ||</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                          </span><span style='font-family:Consolas;
+color:#2A00FF'>&quot;binary&quot;</span><span style='font-family:Consolas;
+color:black'>.startsWith(</span><span style='font-family:Consolas;color:#6A3E3E'>fileType</span><span
+style='font-family:Consolas;color:black'>) ||</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                          </span><span style='font-family:Consolas;
+color:#2A00FF'>&quot;random&quot;</span><span style='font-family:Consolas;
+color:black'>.startsWith(</span><span style='font-family:Consolas;color:#6A3E3E'>fileType</span><span
+style='font-family:Consolas;color:black'>)));</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>out</span></i></b><span style='font-family:Consolas;color:black'>.print(</span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;Enter the file name: &quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><span style='font-family:Consolas;
+color:#6A3E3E'>fileName</span><span style='font-family:Consolas;color:black'> =
+</span><b><i><span style='font-family:Consolas;color:#0000C0'>in</span></i></b><span
+style='font-family:Consolas;color:black'>.readLine().toLowerCase();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><b><span style='font-family:Consolas;
+color:#7F0055'>switch</span></b><span style='font-family:Consolas;color:black'>
+(</span><span style='font-family:Consolas;color:#6A3E3E'>fileType</span><span
+style='font-family:Consolas;color:black'>.charAt(0)) {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    </span><b><span style='font-family:Consolas;
+color:#7F0055'>case</span></b><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:#2A00FF'>'t'</span><span style='font-family:
+Consolas;color:black'>:</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                        </span><span style='font-family:Consolas;
+color:#6A3E3E'>out</span><span style='font-family:Consolas;color:black'> = </span><b><span
+style='font-family:Consolas;color:#7F0055'>new</span></b><span
+style='font-family:Consolas;color:black'> Text(</span><span style='font-family:
+Consolas;color:#6A3E3E'>fileName</span><span style='font-family:Consolas;
+color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                        </span><b><span style='font-family:Consolas;
+color:#7F0055'>break</span></b><span style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    </span><b><span style='font-family:Consolas;
+color:#7F0055'>case</span></b><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:#2A00FF'>'b'</span><span style='font-family:
+Consolas;color:black'>:</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                        </span><span style='font-family:Consolas;
+color:#6A3E3E'>out</span><span style='font-family:Consolas;color:black'> = </span><b><span
+style='font-family:Consolas;color:#7F0055'>new</span></b><span
+style='font-family:Consolas;color:black'> Binary(</span><span style='font-family:
+Consolas;color:#6A3E3E'>fileName</span><span style='font-family:Consolas;
+color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                        </span><b><span style='font-family:Consolas;
+color:#7F0055'>break</span></b><span style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    </span><b><span style='font-family:Consolas;
+color:#7F0055'>case</span></b><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:#2A00FF'>'r'</span><span style='font-family:
+Consolas;color:black'>:</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                        </span><span style='font-family:Consolas;
+color:#6A3E3E'>out</span><span style='font-family:Consolas;color:black'> = </span><b><span
+style='font-family:Consolas;color:#7F0055'>new</span></b><span
+style='font-family:Consolas;color:black'> Random(</span><span style='font-family:
+Consolas;color:#6A3E3E'>fileName</span><span style='font-family:Consolas;
+color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                        </span><b><span style='font-family:Consolas;
+color:#7F0055'>break</span></b><span style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    </span><b><span style='font-family:Consolas;
+color:#7F0055'>default</span></b><span style='font-family:Consolas;color:black'>:</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                        </span><b><span style='font-family:Consolas;
+color:#7F0055'>throw</span></b><span style='font-family:Consolas;color:black'> </span><b><span
+style='font-family:Consolas;color:#7F0055'>new</span></b><span
+style='font-family:Consolas;color:black'> InvalidParameterException();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><b><span style='font-family:Consolas;
+color:#7F0055'>do</span></b><span style='font-family:Consolas;color:black'> {  </span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    System.</span><b><i><span style='font-family:
+Consolas;color:#0000C0'>out</span></i></b><span style='font-family:Consolas;
+color:black'>.print(</span><span style='font-family:Consolas;color:#2A00FF'>&quot;Enter
+Name: &quot;</span><span style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    </span><span style='font-family:Consolas;
+color:#6A3E3E'>name</span><span style='font-family:Consolas;color:black'> = </span><b><i><span
+style='font-family:Consolas;color:#0000C0'>in</span></i></b><span
+style='font-family:Consolas;color:black'>.readLine() + </span><b><i><span
+style='font-family:Consolas;color:#0000C0'>spaces</span></i></b><span
+style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    </span><span style='font-family:Consolas;
+color:#6A3E3E'>name</span><span style='font-family:Consolas;color:black'> = </span><span
+style='font-family:Consolas;color:#6A3E3E'>name</span><span style='font-family:
+Consolas;color:black'>.substring(0,</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>NAME_SIZE</span></i></b><span style='font-family:Consolas;
+color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    </span><span style='font-family:Consolas;
+color:#6A3E3E'>age</span><span style='font-family:Consolas;color:black'>  = <i>getAge</i>();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    </span><span style='font-family:Consolas;
+color:#6A3E3E'>salary</span><span style='font-family:Consolas;color:black'> = <i>getSalary</i>();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    </span><span style='font-family:Consolas;
+color:#6A3E3E'>out</span><span style='font-family:Consolas;color:black'>.write(</span><span
+style='font-family:Consolas;color:#6A3E3E'>name</span><span style='font-family:
+Consolas;color:black'>, </span><span style='font-family:Consolas;color:#6A3E3E'>age</span><span
+style='font-family:Consolas;color:black'>, </span><span style='font-family:
+Consolas;color:#6A3E3E'>salary</span><span style='font-family:Consolas;
+color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    System.</span><b><i><span style='font-family:
+Consolas;color:#0000C0'>out</span></i></b><span style='font-family:Consolas;
+color:black'>.println(</span><span style='font-family:Consolas;color:#2A00FF'>&quot;\n
+Type 'quit' to exit: &quot;</span><span style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    </span><span style='font-family:Consolas;
+color:#6A3E3E'>doMore</span><span style='font-family:Consolas;color:black'> = </span><b><i><span
+style='font-family:Consolas;color:#0000C0'>in</span></i></b><span
+style='font-family:Consolas;color:black'>.readLine().toLowerCase();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    </span><span style='font-family:Consolas;
+color:#6A3E3E'>quit</span><span style='font-family:Consolas;color:black'> = (</span><span
+style='font-family:Consolas;color:#6A3E3E'>doMore</span><span style='font-family:
+Consolas;color:black'>.length()&gt;0 &amp;&amp; </span><span style='font-family:
+Consolas;color:#2A00FF'>&quot;quit&quot;</span><span style='font-family:Consolas;
+color:black'>.startsWith(</span><span style='font-family:Consolas;color:#6A3E3E'>doMore</span><span
+style='font-family:Consolas;color:black'>));</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                }  </span><b><span style='font-family:Consolas;
+color:#7F0055'>while</span></b><span style='font-family:Consolas;color:black'>
+(!</span><span style='font-family:Consolas;color:#6A3E3E'>quit</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><b><span style='font-family:Consolas;
+color:#7F0055'>catch</span></b><span style='font-family:Consolas;color:black'>
+(InvalidParameterException </span><span style='font-family:Consolas;color:#6A3E3E'>e</span><span
+style='font-family:Consolas;color:black'>) {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>out</span></i></b><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;Unknown case&quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                System.<i>exit</i>(1);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><b><span style='font-family:Consolas;
+color:#7F0055'>catch</span></b><span style='font-family:Consolas;color:black'>
+(IOException </span><span style='font-family:Consolas;color:#6A3E3E'>e</span><span
+style='font-family:Consolas;color:black'>) {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>out</span></i></b><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;I/O Error&quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><b><span style='font-family:Consolas;
+color:#7F0055'>catch</span></b><span style='font-family:Consolas;color:black'>
+(Exception </span><span style='font-family:Consolas;color:#6A3E3E'>e</span><span
+style='font-family:Consolas;color:black'>) {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>out</span></i></b><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;Illegal Entry&quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><b><span style='font-family:Consolas;
+color:#7F0055'>finally</span></b><span style='font-family:Consolas;color:black'>
+{</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><b><span style='font-family:Consolas;
+color:#7F0055'>try</span></b><span style='font-family:Consolas;color:black'> {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    </span><span style='font-family:Consolas;
+color:#6A3E3E'>out</span><span style='font-family:Consolas;color:black'>.close();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><b><span style='font-family:Consolas;
+color:#7F0055'>catch</span></b><span style='font-family:Consolas;color:black'>(Exception
+</span><span style='font-family:Consolas;color:#6A3E3E'>e</span><span
+style='font-family:Consolas;color:black'>) {}</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>out</span></i></b><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;Another file? (y/n) &quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><b><span style='font-family:Consolas;
+color:#7F0055'>try</span></b><span style='font-family:Consolas;color:black'> {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><span style='font-family:Consolas;
+color:#6A3E3E'>doMore</span><span style='font-family:Consolas;color:black'> = </span><b><i><span
+style='font-family:Consolas;color:#0000C0'>in</span></i></b><span
+style='font-family:Consolas;color:black'>.readLine().toLowerCase();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><span style='font-family:Consolas;
+color:#6A3E3E'>moreFiles</span><span style='font-family:Consolas;color:black'>
+= (</span><span style='font-family:Consolas;color:#6A3E3E'>doMore</span><span
+style='font-family:Consolas;color:black'>.length()&gt;0 &amp;&amp; </span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;yes&quot;</span><span
+style='font-family:Consolas;color:black'>.startsWith(</span><span
+style='font-family:Consolas;color:#6A3E3E'>doMore</span><span style='font-family:
+Consolas;color:black'>));</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><b><span style='font-family:Consolas;
+color:#7F0055'>catch</span></b><span style='font-family:Consolas;color:black'>
+(Exception </span><span style='font-family:Consolas;color:#6A3E3E'>e</span><span
+style='font-family:Consolas;color:black'>) {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><span style='font-family:Consolas;
+color:#6A3E3E'>moreFiles</span><span style='font-family:Consolas;color:black'>
+= </span><b><span style='font-family:Consolas;color:#7F0055'>false</span></b><span
+style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        }  </span><b><span style='font-family:Consolas;color:#7F0055'>while</span></b><span
+style='font-family:Consolas;color:black'> (</span><span style='font-family:
+Consolas;color:#6A3E3E'>moreFiles</span><span style='font-family:Consolas;
+color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>out</span></i></b><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;File write complete; data is
+in &quot;</span><span style='font-family:Consolas;color:black'>+</span><span
+style='font-family:Consolas;color:#6A3E3E'>fileName</span><span
+style='font-family:Consolas;color:black'>+</span><span style='font-family:Consolas;
+color:#2A00FF'>&quot;\n&quot;</span><span style='font-family:Consolas;
+color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    }   </span><span style='font-family:Consolas;color:#3F7F5F'>//
+End void main()</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><span style='font-family:Consolas;color:#3F7F5F'>//
+Method to input an age.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><b><span style='font-family:Consolas;color:#7F0055'>private</span></b><span
+style='font-family:Consolas;color:black'> </span><b><span style='font-family:
+Consolas;color:#7F0055'>static</span></b><span style='font-family:Consolas;
+color:black'> </span><b><span style='font-family:Consolas;color:#7F0055'>int</span></b><span
+style='font-family:Consolas;color:black'> getAge() {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><b><span style='font-family:Consolas;color:#7F0055'>int</span></b><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:#6A3E3E'>age</span><span style='font-family:Consolas;color:black'> = -1;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        String </span><span style='font-family:Consolas;
+color:#6A3E3E'>inputString</span><span style='font-family:Consolas;color:black'>
+= </span><b><span style='font-family:Consolas;color:#7F0055'>null</span></b><span
+style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><b><span style='font-family:Consolas;color:#7F0055'>do</span></b><span
+style='font-family:Consolas;color:black'> {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><b><span style='font-family:Consolas;
+color:#7F0055'>try</span></b><span style='font-family:Consolas;color:black'> {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>out</span></i></b><span style='font-family:Consolas;color:black'>.print(</span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;Enter Age: &quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><span style='font-family:Consolas;
+color:#6A3E3E'>inputString</span><span style='font-family:Consolas;color:black'>
+= </span><b><i><span style='font-family:Consolas;color:#0000C0'>in</span></i></b><span
+style='font-family:Consolas;color:black'>.readLine();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><span style='font-family:Consolas;
+color:#6A3E3E'>age</span><span style='font-family:Consolas;color:black'> =
+Integer.<i>parseInt</i>(</span><span style='font-family:Consolas;color:#6A3E3E'>inputString</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><b><span style='font-family:Consolas;
+color:#7F0055'>if</span></b><span style='font-family:Consolas;color:black'> (</span><span
+style='font-family:Consolas;color:#6A3E3E'>age</span><span style='font-family:
+Consolas;color:black'>&lt;0 || </span><span style='font-family:Consolas;
+color:#6A3E3E'>age</span><span style='font-family:Consolas;color:black'>&gt;100)</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    </span><b><span style='font-family:Consolas;
+color:#7F0055'>throw</span></b><span style='font-family:Consolas;color:black'> </span><b><span
+style='font-family:Consolas;color:#7F0055'>new</span></b><span
+style='font-family:Consolas;color:black'> Exception();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><b><span style='font-family:Consolas;
+color:#7F0055'>return</span></b><span style='font-family:Consolas;color:black'>
+</span><span style='font-family:Consolas;color:#6A3E3E'>age</span><span
+style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><b><span style='font-family:Consolas;
+color:#7F0055'>catch</span></b><span style='font-family:Consolas;color:black'>
+(Exception </span><span style='font-family:Consolas;color:#6A3E3E'>e</span><span
+style='font-family:Consolas;color:black'>) {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>out</span></i></b><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;Illegal age, try again&quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        }  </span><b><span style='font-family:Consolas;color:#7F0055'>while</span></b><span
+style='font-family:Consolas;color:black'> (</span><b><span style='font-family:
+Consolas;color:#7F0055'>true</span></b><span style='font-family:Consolas;
+color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><span style='font-family:Consolas;color:#3F7F5F'>//
+Method to input a salary.</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><b><span style='font-family:Consolas;color:#7F0055'>private</span></b><span
+style='font-family:Consolas;color:black'> </span><b><span style='font-family:
+Consolas;color:#7F0055'>static</span></b><span style='font-family:Consolas;
+color:black'> </span><b><span style='font-family:Consolas;color:#7F0055'>double</span></b><span
+style='font-family:Consolas;color:black'> getSalary() {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><b><span style='font-family:Consolas;color:#7F0055'>double</span></b><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:#6A3E3E'>salary</span><span style='font-family:Consolas;color:black'> =
+-1;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        String </span><span style='font-family:Consolas;
+color:#6A3E3E'>inputString</span><span style='font-family:Consolas;color:black'>
+= </span><b><span style='font-family:Consolas;color:#7F0055'>null</span></b><span
+style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><b><span style='font-family:Consolas;color:#7F0055'>do</span></b><span
+style='font-family:Consolas;color:black'> {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><b><span style='font-family:Consolas;
+color:#7F0055'>try</span></b><span style='font-family:Consolas;color:black'> {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>out</span></i></b><span style='font-family:Consolas;color:black'>.print(</span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;Enter Salary: &quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><span style='font-family:Consolas;
+color:#6A3E3E'>inputString</span><span style='font-family:Consolas;color:black'>
+= </span><b><i><span style='font-family:Consolas;color:#0000C0'>in</span></i></b><span
+style='font-family:Consolas;color:black'>.readLine();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><span style='font-family:Consolas;
+color:#6A3E3E'>salary</span><span style='font-family:Consolas;color:black'> =
+Double.<i>parseDouble</i>(</span><span style='font-family:Consolas;color:#6A3E3E'>inputString</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><b><span style='font-family:Consolas;
+color:#7F0055'>if</span></b><span style='font-family:Consolas;color:black'> (</span><span
+style='font-family:Consolas;color:#6A3E3E'>salary</span><span style='font-family:
+Consolas;color:black'>&lt;0 || </span><span style='font-family:Consolas;
+color:#6A3E3E'>salary</span><span style='font-family:Consolas;color:black'>&gt;1000000)</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                    </span><b><span style='font-family:Consolas;
+color:#7F0055'>throw</span></b><span style='font-family:Consolas;color:black'> </span><b><span
+style='font-family:Consolas;color:#7F0055'>new</span></b><span
+style='font-family:Consolas;color:black'> Exception();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                </span><b><span style='font-family:Consolas;
+color:#7F0055'>return</span></b><span style='font-family:Consolas;color:black'>
+</span><span style='font-family:Consolas;color:#6A3E3E'>salary</span><span
+style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><b><span style='font-family:Consolas;
+color:#7F0055'>catch</span></b><span style='font-family:Consolas;color:black'>
+(Exception </span><span style='font-family:Consolas;color:#6A3E3E'>e</span><span
+style='font-family:Consolas;color:black'>) {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>                System.</span><b><i><span style='font-family:Consolas;
+color:#0000C0'>out</span></i></b><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:#2A00FF'>&quot;Illegal salary, try
+again&quot;</span><span style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        }  </span><b><span style='font-family:Consolas;color:#7F0055'>while</span></b><span
+style='font-family:Consolas;color:black'> (</span><b><span style='font-family:
+Consolas;color:#7F0055'>true</span></b><span style='font-family:Consolas;
+color:black'>);</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><b><span style='font-family:
+Consolas;color:#7F0055'>abstract</span></b><span style='font-family:Consolas;
+color:black'> </span><b><span style='font-family:Consolas;color:#7F0055'>class</span></b><span
+style='font-family:Consolas;color:black'> Writer {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><b><span style='font-family:Consolas;color:#7F0055'>public</span></b><span
+style='font-family:Consolas;color:black'> </span><b><span style='font-family:
+Consolas;color:#7F0055'>abstract</span></b><span style='font-family:Consolas;
+color:black'> </span><b><span style='font-family:Consolas;color:#7F0055'>void</span></b><span
+style='font-family:Consolas;color:black'> write(String </span><span
+style='font-family:Consolas;color:#6A3E3E'>name</span><span style='font-family:
+Consolas;color:black'>, </span><b><span style='font-family:Consolas;color:#7F0055'>int</span></b><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:#6A3E3E'>age</span><span style='font-family:Consolas;color:black'>, </span><b><span
+style='font-family:Consolas;color:#7F0055'>double</span></b><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:#6A3E3E'>salary</span><span style='font-family:Consolas;color:black'>)</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>        </span><b><span style='font-family:Consolas;color:#7F0055'>throws</span></b><span
+style='font-family:Consolas;color:black'> IOException;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><b><span style='font-family:Consolas;color:#7F0055'>public</span></b><span
+style='font-family:Consolas;color:black'> </span><b><span style='font-family:
+Consolas;color:#7F0055'>abstract</span></b><span style='font-family:Consolas;
+color:black'> </span><b><span style='font-family:Consolas;color:#7F0055'>void</span></b><span
+style='font-family:Consolas;color:black'> close();</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><b><span style='font-family:
+Consolas;color:#7F0055'>class</span></b><span style='font-family:Consolas;
+color:black'> Random </span><b><span style='font-family:Consolas;color:#7F0055'>extends</span></b><span
+style='font-family:Consolas;color:black'> Writer {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    RandomAccessFile </span><span style='font-family:Consolas;
+color:#0000C0'>out</span><span style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><b><span style='font-family:Consolas;color:#7F0055'>public</span></b><span
+style='font-family:Consolas;color:black'> Random(String </span><span
+style='font-family:Consolas;color:#6A3E3E'>fileName</span><span
+style='font-family:Consolas;color:black'>)</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><b><span style='font-family:Consolas;
+color:#7F0055'>throws</span></b><span style='font-family:Consolas;color:black'>
+FileNotFoundException {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><b><span style='font-family:Consolas;color:#7F0055'>public</span></b><span
+style='font-family:Consolas;color:black'> </span><b><span style='font-family:
+Consolas;color:#7F0055'>void</span></b><span style='font-family:Consolas;
+color:black'> write(String </span><span style='font-family:Consolas;color:#6A3E3E'>name</span><span
+style='font-family:Consolas;color:black'>, </span><b><span style='font-family:
+Consolas;color:#7F0055'>int</span></b><span style='font-family:Consolas;
+color:black'> </span><span style='font-family:Consolas;color:#6A3E3E'>age</span><span
+style='font-family:Consolas;color:black'>, </span><b><span style='font-family:
+Consolas;color:#7F0055'>double</span></b><span style='font-family:Consolas;
+color:black'> </span><span style='font-family:Consolas;color:#6A3E3E'>salary</span><span
+style='font-family:Consolas;color:black'>)</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><b><span style='font-family:Consolas;
+color:#7F0055'>throws</span></b><span style='font-family:Consolas;color:black'>
+IOException {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><b><span style='font-family:Consolas;color:#7F0055'>public</span></b><span
+style='font-family:Consolas;color:black'> </span><b><span style='font-family:
+Consolas;color:#7F0055'>void</span></b><span style='font-family:Consolas;
+color:black'> close() {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><b><span style='font-family:
+Consolas;color:#7F0055'>class</span></b><span style='font-family:Consolas;
+color:black'> Binary </span><b><span style='font-family:Consolas;color:#7F0055'>extends</span></b><span
+style='font-family:Consolas;color:black'> Writer {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    DataOutputStream </span><span style='font-family:Consolas;
+color:#0000C0'>out</span><span style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><b><span style='font-family:Consolas;color:#7F0055'>public</span></b><span
+style='font-family:Consolas;color:black'> Binary(String </span><span
+style='font-family:Consolas;color:#6A3E3E'>fileName</span><span
+style='font-family:Consolas;color:black'>)</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><b><span style='font-family:Consolas;
+color:#7F0055'>throws</span></b><span style='font-family:Consolas;color:black'>
+IOException {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><b><span style='font-family:Consolas;color:#7F0055'>public</span></b><span
+style='font-family:Consolas;color:black'> </span><b><span style='font-family:
+Consolas;color:#7F0055'>void</span></b><span style='font-family:Consolas;
+color:black'> write(String </span><span style='font-family:Consolas;color:#6A3E3E'>name</span><span
+style='font-family:Consolas;color:black'>, </span><b><span style='font-family:
+Consolas;color:#7F0055'>int</span></b><span style='font-family:Consolas;
+color:black'> </span><span style='font-family:Consolas;color:#6A3E3E'>age</span><span
+style='font-family:Consolas;color:black'>, </span><b><span style='font-family:
+Consolas;color:#7F0055'>double</span></b><span style='font-family:Consolas;
+color:black'> </span><span style='font-family:Consolas;color:#6A3E3E'>salary</span><span
+style='font-family:Consolas;color:black'>)</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><b><span style='font-family:Consolas;
+color:#7F0055'>throws</span></b><span style='font-family:Consolas;color:black'>
+IOException {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><b><span style='font-family:Consolas;color:#7F0055'>public</span></b><span
+style='font-family:Consolas;color:black'> </span><b><span style='font-family:
+Consolas;color:#7F0055'>void</span></b><span style='font-family:Consolas;
+color:black'> close() {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><b><span style='font-family:
+Consolas;color:#7F0055'>class</span></b><span style='font-family:Consolas;
+color:black'> Text </span><b><span style='font-family:Consolas;color:#7F0055'>extends</span></b><span
+style='font-family:Consolas;color:black'> Writer {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    PrintWriter </span><span style='font-family:Consolas;
+color:#0000C0'>out</span><span style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><b><span style='font-family:Consolas;color:#7F0055'>public</span></b><span
+style='font-family:Consolas;color:black'> Text(String </span><span
+style='font-family:Consolas;color:#6A3E3E'>fileName</span><span
+style='font-family:Consolas;color:black'>)</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><b><span style='font-family:Consolas;
+color:#7F0055'>throws</span></b><span style='font-family:Consolas;color:black'>
+IOException {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><b><span style='font-family:Consolas;color:#7F0055'>public</span></b><span
+style='font-family:Consolas;color:black'> </span><b><span style='font-family:
+Consolas;color:#7F0055'>void</span></b><span style='font-family:Consolas;
+color:black'> write(String </span><span style='font-family:Consolas;color:#6A3E3E'>name</span><span
+style='font-family:Consolas;color:black'>, </span><b><span style='font-family:
+Consolas;color:#7F0055'>int</span></b><span style='font-family:Consolas;
+color:black'> </span><span style='font-family:Consolas;color:#6A3E3E'>age</span><span
+style='font-family:Consolas;color:black'>, </span><b><span style='font-family:
+Consolas;color:#7F0055'>double</span></b><span style='font-family:Consolas;
+color:black'> </span><span style='font-family:Consolas;color:#6A3E3E'>salary</span><span
+style='font-family:Consolas;color:black'>)</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>            </span><b><span style='font-family:Consolas;
+color:#7F0055'>throws</span></b><span style='font-family:Consolas;color:black'>
+IOException {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    </span><b><span style='font-family:Consolas;color:#7F0055'>public</span></b><span
+style='font-family:Consolas;color:black'> </span><b><span style='font-family:
+Consolas;color:#7F0055'>void</span></b><span style='font-family:Consolas;
+color:black'> close() {</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>    }</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='text-autospace:none'><span style='font-family:Consolas'>&nbsp;</span></p>
+
+<h1>Approach:</h1>
+
+<p class=MsoNoSpacing style='margin-left:.25in;text-indent:-.25in'>1.<span
+style='font:7.0pt "Times New Roman"'> </span>Copy Writers.java and TextReader.java
+to your workspace.</p>
+
+<p class=MsoNoSpacing style='margin-left:.25in;text-indent:-.25in'>2.<span
+style='font:7.0pt "Times New Roman"'> </span>Copy Keyboard.java to CS258
+directory</p>
+
+<p class=MsoNoSpacing style='margin-left:.25in;text-indent:-.25in'>3.<span
+style='font:7.0pt "Times New Roman"'> </span>Implement Writers.Text</p>
+
+<p class=MsoNoSpacing style='margin-left:.25in;text-indent:-.25in'>4.<span
+style='font:7.0pt "Times New Roman"'> </span>Implement TextRead.java</p>
+
+<p class=MsoNoSpacing style='margin-left:.25in;text-indent:-.25in'>5.<span
+style='font:7.0pt "Times New Roman"'> </span>Run tests a. and b. above and
+ensure they work.</p>
+
+<p class=MsoNoSpacing style='margin-left:.25in;text-indent:-.25in'>6.<span
+style='font:7.0pt "Times New Roman"'> </span>Implement Writers.Binary and
+Writers.Random</p>
+
+<p class=MsoNoSpacing style='margin-left:.25in;text-indent:-.25in'>7.<span
+style='font:7.0pt "Times New Roman"'> </span>Run test c. above</p>
+
+<p class=MsoNoSpacing style='margin-left:.25in;text-indent:-.25in'>8.<span
+style='font:7.0pt "Times New Roman"'> </span>Implement BinReader</p>
+
+<p class=MsoNoSpacing style='margin-left:.25in;text-indent:-.25in'>9.<span
+style='font:7.0pt "Times New Roman"'> </span>Run test d. above</p>
+
+<p class=MsoNoSpacing style='margin-left:.25in;text-indent:-.25in'>10.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Implement
+RandReader</p>
+
+<p class=MsoNoSpacing style='margin-left:.25in;text-indent:-.25in'>11.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Run test e.
+above</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=ClockDisplay
+comment0.text=\r\n\ The\ ClockDisplay\ class\ implements\ a\ digital\ clock\ display\ for\ a\r\n\ European-style\ 24\ hour\ clock.\ The\ clock\ shows\ hours\ and\ minutes.\ The\ \r\n\ range\ of\ the\ clock\ is\ 00\:00\ (midnight)\ to\ 23\:59\ (one\ minute\ before\ \r\n\ midnight).\r\n\ \r\n\ The\ clock\ display\ receives\ "ticks"\ (via\ the\ timeTick\ method)\ every\ minute\r\n\ and\ reacts\ by\ incrementing\ the\ display.\ This\ is\ done\ in\ the\ usual\ clock\r\n\ fashion\:\ the\ hour\ increments\ when\ the\ minutes\ roll\ over\ to\ zero.\r\n\ \r\n\ @author\ Michael\ K\u00F6lling\ and\ David\ J.\ Barnes\r\n\ @version\ 2016.02.29\r\n\ Modifications\:\r\n\ The\ original\ project\ was\ a\ 24\ hour\ clock.\ The\ project\ has\ been\ modified\ to\ work\ as\ a\ 12\r\n\ hour\ clock.\r\n\ Author\:\ Aljandal,\ Saud\ 5/8/2017.\r\n\ constructor\ ClockDisplay()\ has\ been\ modified\ by\ adding\ a\ default\ time\ representation\ +\ changing\ the\ limit\ value.\r\n\ constructor\ ClockDisplay(int\ hour,\ int\ minute)\ has\ been\ modified\ by\ changing\ the\ limit\ value.\r\n\ method\ timeTick()\ has\ been\ modified\ by\ adding\ if-statements.\r\n\ method\ setTime(int\ hour,\ int\ minute)\ has\ been\ modified\ by\ adding\ if-statement.\r\n
+comment1.params=
+comment1.target=ClockDisplay()
+comment1.text=\r\n\ Constructor\ for\ ClockDisplay\ objects.\ This\ constructor\ \r\n\ creates\ a\ new\ clock\ set\ at\ 12\:59.\r\n
+comment2.params=hour\ minute
+comment2.target=ClockDisplay(int,\ int)
+comment2.text=\r\n\ Constructor\ for\ ClockDisplay\ objects.\ This\ constructor\r\n\ creates\ a\ new\ clock\ set\ at\ the\ time\ specified\ by\ the\ \r\n\ parameters.\r\n
+comment3.params=
+comment3.target=void\ timeTick()
+comment3.text=\r\n\ Name\:\ timeTick.\r\n\ Description\:\ This\ method\ should\ get\ called\ once\ every\ minute\ -\ it\ makes\r\n\ the\ clock\ display\ go\ one\ minute\ forward.\r\n\ If\ the\ minutes\ field\ equals\ to\ zero,\ hours\ field\ will\ be\ incremented.\r\n\ Also,\ if\ the\ time\ is\ 12;59,\ the\ minutes\ rolling\ over\ will\ increment\ the\ hours\ field\ by\ one.\ but\ we\ cannot\r\n\ start\ the\ 12-hour\ clock\ by\ 0\ hour.\ the\ second\ if-statement\ will\ make\ it\ equal\ to\ 01\:00\ by\ incrementing\ the\ hours\ \r\n\ field.\r\n
+comment4.params=hour\ minute
+comment4.target=void\ setTime(int,\ int)
+comment4.text=\r\n\ name\:\ setTime.\r\n\ Description\:\ Set\ the\ time\ of\ the\ display\ to\ the\ specified\ hour\ and\r\n\ minute.\ Check\ if\ the\ specified\ hour\ is\ more\ than\ 12.\ If\ so,\ substrct\ 12\ from\ the\r\n\ specified\ hour\ to\ meet\ the\ 12-hour\ clock\ system.\r\n\ also,\ there\ is\ no\ 00\:00\ in\ the\ 12-hour\ clock.\ if\ the\ user\ typed\ 00\:11\ for\ instance,\r\n\ this\ should\ be\ represented\ as\ 12\:11,\ either\ AM\ or\ PM.\ And\ that\ what\ the\ first\ if\ statement\ does.\r\n
+comment5.params=
+comment5.target=java.lang.String\ getTime()
+comment5.text=\r\n\ Return\ the\ current\ time\ of\ this\ display\ in\ the\ format\ HH\:MM.\r\n
+comment6.params=
+comment6.target=void\ updateDisplay()
+comment6.text=\r\n\ Update\ the\ internal\ string\ that\ represents\ the\ display.\r\n
+numComments=7

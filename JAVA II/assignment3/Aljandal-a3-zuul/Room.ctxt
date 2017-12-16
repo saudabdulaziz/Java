@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Room
+comment1.params=description
+comment1.target=Room(java.lang.String)
+comment1.text=\r\n\ Create\ a\ room\ described\ "description".\ Initially,\ it\ has\r\n\ no\ exits.\ "description"\ is\ something\ like\ "a\ kitchen"\ or\r\n\ "an\ open\ court\ yard".\r\n\ EX\ 6.20\ \ \ \ \r\n\ MODIFICATION\:\r\n\ @param\ description\ The\ room's\ description.\ &\ String\ itemDescriotion,\ int\ itemWeight\r\n\ Also,\ initializing\ an\ item\ information\ field.\ \r\n
+comment2.params=item
+comment2.target=void\ setItem(Item)
+comment2.text=\r\n\ Add\ an\ item\ to\ this\ room\r\nEX\ 6.20\r\n
+comment3.params=direction\ neighbor
+comment3.target=void\ setExit(java.lang.String,\ Room)
+comment3.text=\r\n\ Define\ the\ exits\ of\ this\ room.\ \ Every\ direction\ either\ leads\r\n\ to\ another\ room\ or\ is\ null\ (no\ exit\ there).\r\n\ @param\ north\ The\ north\ exit.\r\n\ @param\ east\ The\ east\ east.\r\n\ @param\ south\ The\ south\ exit.\r\n\ @param\ west\ The\ west\ exit.\r\n
+comment4.params=direction
+comment4.target=Room\ getExit(java.lang.String)
+comment4.text=\r\n\ return\ the\ available\ exit\ by\ the\ typed\ direction.\r\n\ @param\ direction\r\n
+comment5.params=
+comment5.target=java.lang.String\ getExitString()
+comment5.text=\ \r\n\ Return\ a\ description\ of\ the\ room\u2019s\ exits,\r\n\ for\ example,\ "Exits\:\ north\ west".\ \r\n\ @return\ A\ description\ of\ the\ available\ exits.\r\n\ \r\n
+comment6.params=
+comment6.target=java.lang.String\ getLongDescription()
+comment6.text=\r\n\ \ Return\ a\ long\ description\ of\ this\ room,\ of\ the\ form\:\ \r\n\ \ You\ are\ in\ the\ looby.\r\n\ \ Directions\ of\ where\ you\ can\ go\:\ east\ west\ north\ south\r\n\ \ \ @return\ A\ description\ of\ the\ room,\ including\ exits.\r\n\ \ \ EX\ 6.20\:\ editing\ the\ print\ statement\ so\ it\ contains\ the\ item\ information\ and\ weight.\r\n\ \ \ \r\n
+comment7.params=
+comment7.target=java.lang.String\ getDescription()
+comment7.text=\r\n\ @return\ The\ description\ of\ the\ room.\r\n
+numComments=8

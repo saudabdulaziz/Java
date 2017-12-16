@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Item
+comment0.text=\r\n\ This\ class\ will\ prepare\ an\ item\ description\ and\ it's\ weight\ to\ be\ returned\ after\ going\ to\ any\ direction\ in\ the\ game.\r\n\r\n\ @author\ (Saud\ Aljandal)\r\n\ @version\ (2017.07.15)\r\n\ Ex\ 6.20\:\ creating\ a\ class\ called\ Item\ and\ implement\ methods\ for\ \r\n\ items\ which\ will\ be\ found\ in\ the\ rooms.\r\n\ \r\n\ EX\ 6.20\r\n\ Adding\ the\ class\ "Item"\ which\ describes\ an\ item\ +\ providing\ a\ weight\ for\ it.\r\n
+comment1.params=itemDescription\ itemWeight
+comment1.target=Item(java.lang.String,\ int)
+comment1.text=\r\n\ Create\ the\ item\ description\ and\ weight.\r\n
+comment2.params=
+comment2.target=java.lang.String\ getItemInformation()
+comment2.text=\r\n\ setting\ getter\r\n\ Return\ the\ description\ and\ the\ weight\ fot\ the\ item\r\n
+numComments=3

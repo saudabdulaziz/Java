@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Room
+comment1.params=description
+comment1.target=Room(java.lang.String)
+comment1.text=\r\n\ Create\ a\ room\ described\ "description".\ Initially,\ it\ has\r\n\ no\ exits.\ "description"\ is\ something\ like\ "a\ kitchen"\ or\r\n\ "an\ open\ court\ yard".\r\n\ @param\ description\ The\ room's\ description.\r\n\ MODIFICATION\:\r\n\ EX\ 6.8\ new\ hashmap\ has\ been\ initialized\r\n
+comment2.params=direction\ neighbor
+comment2.target=void\ setExit(java.lang.String,\ Room)
+comment2.text=\r\n\ Define\ the\ exits\ of\ this\ room.\ \ Every\ direction\ either\ leads\r\n\ to\ another\ room\ or\ is\ null\ (no\ exit\ there).\r\n\ @param\ north\ The\ north\ exit.\r\n\ @param\ east\ The\ east\ east.\r\n\ @param\ south\ The\ south\ exit.\r\n\ @param\ west\ The\ west\ exit.\r\n\ MODIFICATIONS\:\r\n\ EX\ 6.8\ the\ if\ statements\ have\ been\ modified\ for\ the\ hashmap.\ \r\n\ we\ added\ the\ hashmap\ 'put'\ method.\ \r\n\ the\ method\ has\ been\ entirely\ changed\ to\ be\ suitable\ with\ hashmap.\r\n
+comment3.params=direction
+comment3.target=Room\ getExit(java.lang.String)
+comment3.text=\r\n\ EX\ 6.6\ getExit\ method\ has\ been\ added.\r\n\ return\ the\ available\ exit\ by\ the\ typed\ direction.\r\n\ @param\ direction.\r\n\ MODIFICATIONS\:\r\n\ the\ exits\ directions\ old\ code\ block\ has\ been\ replaced\ with\ the\ hashmap\ method\ 'get'\r\n
+comment4.params=
+comment4.target=java.lang.String\ getExitString()
+comment4.text=\ \r\n\ EX\ 6.7\r\n\ Return\ a\ description\ of\ the\ room\u2019s\ exits,\r\n\ for\ example,\ "Exits\:\ north\ west".\ \r\n\ @return\ A\ description\ of\ the\ available\ exits.\r\n\ MODIFICATIONS\:\r\n\ EX\ 6.11\r\n\ the\ method\ has\ been\ modified\ to\ set\ the\ exits\ direction\ inside\ a\ set\ to\ make\ it\ \r\n\ easier\ if\ we\ want\ to\ add\ new\ directions.\r\n\ \r\n
+comment5.params=
+comment5.target=java.lang.String\ getLongDescription()
+comment5.text=\r\n\ EX\ 6.11\r\n\ *\ Return\ a\ long\ description\ of\ this\ room,\ of\ the\ form\:\ \r\n\ \ You\ are\ in\ the\ looby.\r\n\ \ Directions\ of\ where\ you\ can\ go\:\ east\ west\ north\ south\r\n\ \ \ @return\ A\ description\ of\ the\ room,\ including\ exits.\r\n
+comment6.params=
+comment6.target=java.lang.String\ getDescription()
+comment6.text=\r\n\ @return\ The\ description\ of\ the\ room.\r\n
+numComments=7

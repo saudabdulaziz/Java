@@ -1,0 +1,553 @@
+
+<!-- saved from url=(0048)http://cs.sou.edu/~nordquip/cs258/labs/lab5.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<title>Lab Assignment Number 6 - cs258</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:"Courier New";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-link:"Body Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:18.0pt;
+	font-family:"Courier New";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{mso-style-link:"Body Text Indent Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{mso-style-link:"Body Text 2 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{mso-style-link:"Body Text Indent 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.5in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{mso-style-link:"Body Text Indent 3 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.75in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri Light",sans-serif;
+	color:#5B9BD5;
+	font-weight:bold;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;
+	font-family:"Courier New";}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;
+	font-family:"Courier New";}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Calibri Light",sans-serif;
+	color:#323E4F;
+	letter-spacing:.25pt;}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	mso-style-link:"Body Text";
+	font-family:"Courier New";}
+span.BodyTextIndentChar
+	{mso-style-name:"Body Text Indent Char";
+	mso-style-link:"Body Text Indent";
+	font-family:"Courier New";}
+span.BodyText2Char
+	{mso-style-name:"Body Text 2 Char";
+	mso-style-link:"Body Text 2";
+	font-family:"Courier New";}
+span.BodyTextIndent2Char
+	{mso-style-name:"Body Text Indent 2 Char";
+	mso-style-link:"Body Text Indent 2";
+	font-family:"Courier New";}
+span.BodyTextIndent3Char
+	{mso-style-name:"Body Text Indent 3 Char";
+	mso-style-link:"Body Text Indent 3";
+	font-family:"Courier New";}
+p.msolistparagraphcxspfirst, li.msolistparagraphcxspfirst, div.msolistparagraphcxspfirst
+	{mso-style-name:msolistparagraphcxspfirst;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.msolistparagraphcxspmiddle, li.msolistparagraphcxspmiddle, div.msolistparagraphcxspmiddle
+	{mso-style-name:msolistparagraphcxspmiddle;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.msolistparagraphcxsplast, li.msolistparagraphcxsplast, div.msolistparagraphcxsplast
+	{mso-style-name:msolistparagraphcxsplast;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:.7in 1.0in .7in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang="EN-US" link="blue" vlink="purple">
+
+<div class="WordSection1">
+
+<p class="MsoTitle"><b>&nbsp;</b></p>
+
+<p class="MsoTitle" style="margin-bottom:14.0pt"><b>Lab Assignment Number 5 –
+cs258</b></p>
+
+<p class="MsoNormal"><b>Goals</b></p>
+
+<p class="MsoNormal" style="margin-left:39.75pt;text-indent:-21.75pt">1)<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span>To implement
+a stack.</p>
+
+<p class="MsoNormal" style="margin-left:39.75pt;text-indent:-21.75pt">2)<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span>Implement
+a calculator program that makes use of your stack class.</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal"><b>Synthesis Questions</b></p>
+
+<p class="MsoListParagraph" style="text-indent:-.25in">1.<span style="font:7.0pt &quot;Times New Roman&quot;">
+</span>Would you call the stack implementation in demos/StackTest.java a dynamic
+stack?&nbsp; Why or why not?</p>
+
+<p class="MsoListParagraph" style="text-indent:-.25in">2.<span style="font:7.0pt &quot;Times New Roman&quot;">
+</span>Show an implementation of the push() method in demos/StackTest.java that
+would make StackTest implement a dynamic rather than a fixed-size stack.</p>
+
+<p class="MsoListParagraph" style="text-indent:-.25in">3.<span style="font:7.0pt &quot;Times New Roman&quot;">
+</span>What part of the Stack5 class was generic?</p>
+
+<p class="MsoListParagraph" style="text-indent:-.25in">4.<span style="font:7.0pt &quot;Times New Roman&quot;">
+</span>Show a statement that would create a Stack5 object such that this object
+could hold elements of different types.</p>
+
+<p class="MsoListParagraph" style="text-indent:-.25in">5.<span style="font:7.0pt &quot;Times New Roman&quot;">
+</span>How does a stack differ from a queue?</p>
+
+<p class="MsoListParagraph" style="text-indent:-.25in">6.<span style="font:7.0pt &quot;Times New Roman&quot;">
+</span>Describe an application where a fixed-size queue would be an appropriate
+data structure.</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal"><b>Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b></p>
+
+<p class="MsoListParagraph" style="text-indent:-.25in;text-autospace:none">1)<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span>Create a
+class named Stack5 using the following code.</p>
+
+<p class="MsoNormal" style="text-autospace:none">&nbsp;</p>
+
+<p class="MsoNormal" style="text-autospace:none">Note: Your Stack5 class must use
+a linked list of Node objects to implement the stack.<br>
+<span style="color:red">&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><br>
+<b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">import</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black">
+java.util.EmptyStackException;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><b><span style="font-size:14.0pt;
+font-family:Consolas;color:#7F0055">public</span></b><span style="font-size:
+14.0pt;font-family:Consolas;color:black"> </span><b><span style="font-size:
+14.0pt;font-family:Consolas;color:#7F0055">class</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> Stack5&lt;D&gt;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">{&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">private</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">class</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> <span style="background:silver">Node</span> {</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">private</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> D </span><u><span style="font-size:14.0pt;font-family:Consolas;color:#0000C0">data</span></u><span style="font-size:14.0pt;font-family:Consolas;color:black">;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">private</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> <span style="background:silver">Node</span> </span><u><span style="font-size:14.0pt;
+font-family:Consolas;color:#0000C0">next</span></u><span style="font-size:14.0pt;
+font-family:Consolas;color:black">;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">private</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> Node (D </span><span style="font-size:14.0pt;font-family:Consolas;color:#6A3E3E">value</span><span style="font-size:14.0pt;font-family:Consolas;color:black">, <span style="background:silver">Node</span> </span><span style="font-size:14.0pt;
+font-family:Consolas;color:#6A3E3E">link</span><span style="font-size:14.0pt;
+font-family:Consolas;color:black">)
+{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp; </span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">private</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> <span style="background:silver">Node</span> </span><u><span style="font-size:14.0pt;
+font-family:Consolas;color:#0000C0">top</span></u><span style="font-size:14.0pt;
+font-family:Consolas;color:black">;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp; </span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; </span><span style="font-size:
+14.0pt;font-family:Consolas;color:#3F5FBF">/**</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:#3F5FBF">&nbsp;&nbsp;&nbsp; * Create a new Stack</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:#3F5FBF">&nbsp;&nbsp;&nbsp; */</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">public</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> Stack5() {</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; </span><span style="font-size:
+14.0pt;font-family:Consolas;color:#3F5FBF">/**</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:#3F5FBF">&nbsp;&nbsp;&nbsp; * push a node onto the
+stack</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:#3F5FBF">&nbsp;&nbsp;&nbsp; * </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F9FBF">@param</span></b><span style="font-size:14.0pt;font-family:Consolas;color:#3F5FBF"> value </span><span style="font-size:14.0pt;font-family:Consolas;color:#7F7F9F">-</span><span style="font-size:14.0pt;font-family:Consolas;color:#3F5FBF"> the node</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:#3F5FBF">&nbsp;&nbsp;&nbsp; */</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">public</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">void</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> push(D </span><span style="font-size:14.0pt;font-family:Consolas;color:#6A3E3E">value</span><span style="font-size:14.0pt;font-family:Consolas;color:black">) {</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; </span><span style="font-size:
+14.0pt;font-family:Consolas;color:#3F5FBF">/**</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:#3F5FBF">&nbsp;&nbsp;&nbsp; * pop the top node from
+the stack</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:#3F5FBF">&nbsp;&nbsp;&nbsp; * </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F9FBF">@return</span></b><span style="font-size:14.0pt;font-family:Consolas;color:#3F5FBF"> </span><span style="font-size:14.0pt;font-family:Consolas;color:#7F7F9F">-</span><span style="font-size:14.0pt;font-family:Consolas;color:#3F5FBF"> the top node</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:#3F5FBF">&nbsp;&nbsp;&nbsp; * </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F9FBF">@throws</span></b><span style="font-size:14.0pt;font-family:Consolas;color:#3F5FBF"> EmptyStackException
+if the stack is empty</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:#3F5FBF">&nbsp;&nbsp;&nbsp; */</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">public</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> D pop () </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">throws</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> EmptyStackException
+{</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">return</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">null</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black">;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; </span><span style="font-size:
+14.0pt;font-family:Consolas;color:#3F5FBF">/**</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:#3F5FBF">&nbsp;&nbsp;&nbsp; * return the top node
+without removing it from the stack</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:#3F5FBF">&nbsp;&nbsp;&nbsp; * </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F9FBF">@return</span></b><span style="font-size:14.0pt;font-family:Consolas;color:#3F5FBF"> </span><span style="font-size:14.0pt;font-family:Consolas;color:#7F7F9F">-</span><span style="font-size:14.0pt;font-family:Consolas;color:#3F5FBF"> the top node</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:#3F5FBF">&nbsp;&nbsp;&nbsp; * </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F9FBF">@throws</span></b><span style="font-size:14.0pt;font-family:Consolas;color:#3F5FBF"> EmptyStackException
+if the stack isEmpty</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:#3F5FBF">&nbsp;&nbsp;&nbsp; */</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">public</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> D peek() </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">throws</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> EmptyStackException
+{</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">return</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">null</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black">;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; </span><span style="font-size:
+14.0pt;font-family:Consolas;color:#3F5FBF">/**</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:#3F5FBF">&nbsp;&nbsp;&nbsp; * </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F9FBF">@return</span></b><span style="font-size:14.0pt;font-family:Consolas;color:#3F5FBF"> </span><span style="font-size:14.0pt;font-family:Consolas;color:#7F7F9F">-</span><span style="font-size:14.0pt;font-family:Consolas;color:#3F5FBF"> true if the stack
+is empty, else false</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:#3F5FBF">&nbsp;&nbsp;&nbsp; */</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">public</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">boolean</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> isEmpty() {</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">return</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">false</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black">;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; </span><span style="font-size:
+14.0pt;font-family:Consolas;color:#3F5FBF">/**</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:#3F5FBF">&nbsp;&nbsp;&nbsp; * </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F9FBF">@return</span></b><span style="font-size:14.0pt;font-family:Consolas;color:#3F5FBF"> </span><span style="font-size:14.0pt;font-family:Consolas;color:#7F7F9F">-</span><span style="font-size:14.0pt;font-family:Consolas;color:#3F5FBF"> a String
+representing all the items in the stack in order from top to bottom</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:#3F5FBF">&nbsp;&nbsp;&nbsp; * separated by " ;
+"</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:#3F5FBF">&nbsp;&nbsp;&nbsp; */</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">public</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> String toString() {</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">return</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black"> </span><b><span style="font-size:14.0pt;font-family:Consolas;color:#7F0055">null</span></b><span style="font-size:14.0pt;font-family:Consolas;color:black">;</span></p>
+
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:14.0pt;
+font-family:Consolas;color:black">&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:12.0pt;text-autospace:none"><span style="font-size:14.0pt;font-family:Consolas;color:black">}</span><span style="font-size:14.0pt;font-family:Consolas">&nbsp;</span></p>
+
+<p class="MsoListParagraph" style="text-indent:-.25in;text-autospace:none">2)<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif"> &nbsp; </span>Write
+a program (named <i>Calculator.java</i>) that evaluates arithmetic expressions.
+You must use the stack algorithm we discussed in class and the Stack5 class you
+created in the last step. Input and evaluate expressions in a loop until the
+user enters the string “quit” on the expression input line. You may assume the
+user will enter one expression per line.</p>
+
+<p class="MsoNormal" style="margin-left:22.5pt">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-left:22.5pt">The following is a list of hints
+that should make the task easier.</p>
+
+<p class="MsoNormal" style="margin-left:.75in;text-indent:-.25in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Use
+a <i>StringTokenizer</i> object with <i>"+-*/()"</i> as delimiters.</p>
+
+<p class="MsoNormal" style="margin-left:.75in;text-indent:-.25in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Catch
+exceptions for illegal stack operations, parsing errors, and for illegal data.
+After an exception, allow the user to try again. You'll need only one <i>try/catch</i>
+statement in the <i>main() </i>method.</p>
+
+<p class="MsoListParagraph" style="margin-left:.75in;text-indent:-.25in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Implement
+an <i>eval() </i>method that pops two operands and an operator. <i>eval() </i>then
+performs the calculation and pushes the result onto the operand stack. </p>
+
+<p class="MsoListParagraph" style="margin-left:.75in;text-align:justify;
+text-indent:-.25in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>When a right parenthesis is encountered, evaluate operands and operators
+until a matching left parenthesis is encountered. The input expression failed
+to parse if no matching left parenthesis is found.</p>
+
+<p class="MsoListParagraph" style="margin-left:.75in;text-indent:-.25in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</span>At
+the end of the evaluation, the <i>operator </i>stack should be empty and the <i>operand
+</i>stack should be left with only one value (the result). After popping the
+result, the <i>operand </i>stack should also be empty. If not, the input
+expression failed to parse.</p>
+
+<p class="MsoListParagraph" style="margin-left:.75in;text-indent:-.25in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Tell the
+user there was a parse error if the input expression failed to parse.</p>
+
+<p class="MsoNormal" style="margin-left:.75in;text-indent:-.25in">&nbsp;</p>
+
+<p class="MsoListParagraph" style="text-indent:-.25in">3)<span style="font-size:
+7.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span>Extend your calculator to:</p>
+
+<p class="MsoNormal" style="margin-left:.75in;text-indent:-.25in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Allow
+unary operations (ex: -3 + 4 contains a unary minus). The following are some
+implementation ideas:</p>
+
+<p class="MsoListParagraph" style="margin-left:1.25in;text-indent:-.25in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A boolean <i>signOk</i>
+flag can be set to <i>true</i> whenever a unary operation is allowed. Times
+when a unary minus or unary plus is allowed are at the start of the expression
+and after a left parenthesis. Set <i>signOk </i>false anytime that a unary
+expression is not allowed.</p>
+
+<p class="MsoListParagraph" style="margin-top:0in;margin-right:0in;margin-bottom:
+12.0pt;margin-left:1.25in;text-indent:-.25in"><span style="font-family:Symbol">·</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>If a unary plus or minus is encountered, set a <i>sign</i> variable to <i>+1
+</i>or <i>-1</i> and set <i>signOk </i>to false. Multiply the operand by <i>sign
+</i>when converting the next token to a <i>double </i>value.</p>
+
+<p class="MsoListParagraph" style="margin-bottom:12.0pt;text-indent:-.25in">4)<span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span>Answer the
+synthesis questions in an rtf or docx file (answers.rtf or answers.docx). <b>Type
+your name and the lab number on this file and include the questions with the
+answers.</b> </p>
+
+<p class="MsoListParagraph" style="text-indent:-.25in">5)<span style="font-size:
+7.0pt;font-family:&quot;Times New Roman&quot;,serif"> </span>Zip your Eclipse project
+along with the synthesis answers and submit your zip file on moodle.</p>
+
+</div>
+
+
+
+
+</body></html>

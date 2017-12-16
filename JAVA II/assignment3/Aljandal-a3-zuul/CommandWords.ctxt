@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=CommandWords
+comment0.text=\n\ EX\ 6.14\ &\ EX\ 6.15\:\ Adding\ command\ words\ "look"\ &\ "luggage"\ to\ the\ list\ of\ \n\ legal\ commands\ words.\n\ \n
+comment1.params=
+comment1.target=CommandWords()
+comment1.text=\n\ Constructor\ -\ initialise\ the\ command\ words.\n
+comment2.params=
+comment2.target=java.lang.String\ getCommandList()
+comment2.text=\n\ EX\ 6.16\:\n\ Print\ all\ valid\ commands\ to\ System.out.\n\ EX\ 6.18\:\n\ change\ the\ method\ name\ to\ getCommandList\ and\ changing\ the\ code\ so\ it\ will\ return\ the\ list\n\ of\ command\ words\ instead\ of\ printing\ them.\n
+comment3.params=aString
+comment3.target=boolean\ isCommand(java.lang.String)
+comment3.text=\n\ Check\ whether\ a\ given\ String\ is\ a\ valid\ command\ word.\ \n\ @return\ true\ if\ a\ given\ string\ is\ a\ valid\ command,\n\ false\ if\ it\ isn't.\n
+numComments=4
